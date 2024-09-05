@@ -63,7 +63,7 @@ export default function Menu() {
       </div>
       {menuOpen ? (
         <div
-          className="absolute top-20 left-0 bg-background text-text w-full md:hidden"
+          className="absolute top-20 left-0 bg-background text-text w-full md:hidden z-20"
           onClick={() => setMenuOpen(false)}
         >
           <Link href="/">

@@ -17,7 +17,7 @@ const config: Config = {
       colors: {
         background: "#031926",
         title: "#FBFCFF",
-        text : "#D0CCD0",
+        gray : "#D0CCD0",
         icon: "#D0AD6D",
         input: "#2C2E30",
       },

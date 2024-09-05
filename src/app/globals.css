@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+h1 {
+  @apply font-title text-white;
+}
+
+p {
+  @apply font-text text-gray;
+}
