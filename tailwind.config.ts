@@ -1,3 +1,4 @@
+import { Josefin_Sans } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -8,11 +9,19 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontFamily:{
+        "title": ['var(--font-Josefin)'],
+        "text": ['var(--font-Inter)'],
+        "logo": ['var(--font-Overpass)'],
       },
+      colors: {
+        background: "#031926",
+        title: "#FBFCFF",
+        gray : "#D0CCD0",
+        icon: "#D0AD6D",
+        input: "#2C2E30",
+      },
+      
     },
   },
   plugins: [],
