@@ -3,29 +3,58 @@ import { MdAlternateEmail } from "react-icons/md";
 import { FiPhoneCall } from "react-icons/fi";
 
 import MainPhoto from "../../public/Photos/maison_pierre.jpg";
+import enduitChanvre from "../../public/Photos/ensuitChanvre.jpg";
 import ServiceCarousel from "./components/ServiceCarousel";
 import Button from "./components/Button";
 
 export default function Home() {
+  const photos1 = [
+    { src: MainPhoto, alt: "Maison en pierre" },
+    {
+      src: enduitChanvre,
+      alt: "Enduit en chanvre",
+    },
+  ];
+
   return (
-    <div className="bg-background text-white flex flex-col items-center">
+    <div className="bg-background w-full text-white flex flex-col items-center">
       <section className="w-full flex flex-col items-center">
-        <div
-          className="w-full h-72 md:h-96 z-10
-       overflow-hidden relative flex flex-col items-center justify-center"
-        >
-          <Image
-            src={MainPhoto}
-            alt="Maison avec pierre et joints en enduit blancs"
-            quality={100}
-            fill={true}
-            objectFit="cover"
-          />
-          <div className="absolute inset-0 bg-background bg-opacity-25"></div>
-          <h1 className="z-10 absolute w-4/5 text-center text-3xl">
-            Maçonnerie génerale <br></br>Pays basque et Sud des Landes
-          </h1>
+        <div className="w-full h-72 md:h-screen z-10">
+          <div
+            className="w-full h-72 md:h-screen z-10
+       relative flex flex-col items-center justify-center"
+          >
+            <div className="w-full flex h-screen">
+              <div className="relative w-1/2 h-screen">
+                <Image
+                  src={MainPhoto}
+                  alt="Maison avec pierre et joints en enduit blancs"
+                  objectFit="cover"
+                  fill={true}
+                />
+              </div>
+              <div className="relative w-1/2 h-screen">
+                <Image
+                  src={enduitChanvre}
+                  alt="Maison avec pierre et joints en enduit blancs"
+                  objectFit="cover"
+                  fill={true}
+                />
+              </div>
+            </div>
+            <div className="absolute inset-0 bg-background bg-opacity-30"></div>
+            <div></div>
+            <div className="z-10 absolute ">
+              <h1 className="text-center text-5xl font-semibold">
+                Entreprise générale du bâtiment
+              </h1>
+              <h1 className="text-center text-4xl font-normal mt-10">
+                Gros Oeuvre et Eco Construction
+              </h1>
+            </div>
+          </div>
         </div>
+
         <h2 className="font-title text-gray font-semibold text-center pt-2">
           Maçonnerie - Rénovation - Eco Construction
         </h2>

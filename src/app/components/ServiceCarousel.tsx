@@ -1,47 +1,31 @@
 import React from "react";
+import Image from "next/image";
+import photoEnduits from "../../../public/Photos/maison_pierre.jpg";
+
+const services = [
+  { name: "Enduits", photo: photoEnduits, alt: "Une maison en pierre" },
+  { name: "Enduits", photo: photoEnduits, alt: "Une maison en pierre" },
+  { name: "Enduits", photo: photoEnduits, alt: "Une maison en pierre" },
+  { name: "Enduits", photo: photoEnduits, alt: "Une maison en pierre" },
+];
 
 const ServiceCarousel = () => {
   return (
-    <div className="carousel carousel-center bg-background max-w-md space-x-4 p-4">
-      <div className="carousel-item relative">
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp"
-          className="rounded-md"
-        />
-        <div className="absolute inset-0 bg-background bg-opacity-25"></div>
-        <h1 className="z-10 absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 text-3xl">
-          Enduits
-        </h1>
-      </div>
-      <div className="carousel-item relative">
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp"
-          className="rounded-md"
-        />
-        <div className="absolute inset-0 bg-background bg-opacity-25"></div>
-        <h1 className="z-10 absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 text-3xl">
-          Enduits
-        </h1>
-      </div>
-      <div className="carousel-item relative">
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp"
-          className="rounded-md"
-        />
-        <div className="absolute inset-0 bg-background bg-opacity-25"></div>
-        <h1 className="z-10 absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 text-3xl">
-          Enduits
-        </h1>
-      </div>
-      <div className="carousel-item relative">
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp"
-          className="rounded-md"
-        />
-        <div className="absolute inset-0 bg-background bg-opacity-25"></div>
-        <h1 className="z-10 absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 text-3xl">
-          Enduits
-        </h1>
+    <div className="flex bg-background w-4/6 h-96 p-4 overflow-hidden">
+      <div className="h-full flex gap-x-4">
+        {services.map((service, i) => (
+          <div className=" relative w-1/3 flex-none">
+            <Image
+              src={service.photo}
+              className="object-cover object-center h-full w-full "
+              alt={service.alt}
+            />
+            <div className="absolute inset-0 bg-background bg-opacity-25"></div>
+            <h1 className="z-10 absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 text-3xl">
+              {service.name}
+            </h1>
+          </div>
+        ))}
       </div>
     </div>
   );
