@@ -29,7 +29,7 @@ export default function Navbar() {
           scrolled >= 20 ? "bg-background" : "bg-none"
         } hover:bg-background w-full py-2 h-20 text-title flex md:justify-center fixed top-0 z-30 transition-all duration-200 ease-in-out`}
       >
-        <div className="flex w-full md:w-5/6 lg:w-4/5 h-full justify-between items-center mx-3">
+        <div className="flex w-full h-full justify-between items-center mx-5">
           <div className="flex items-center gap-2 h-full w-full">
             <Image src={logo} alt="Arkébat logo" height={60} />
             <div className="flex flex-col items-start my-1">

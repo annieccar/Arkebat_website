@@ -27,7 +27,7 @@ export default function Menu() {
             )}
             {expertiseOpen && (
               <div
-                className="absolute top-[76px] left-0 bg-background w-fit"
+                className="absolute top-full left-0 bg-background w-fit"
                 onClick={() => setExpertiseOpen(false)}
               >
                 <Link href="/maconnerie">
