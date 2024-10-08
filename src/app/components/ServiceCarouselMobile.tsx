@@ -1,5 +1,10 @@
-import React from "react";
 import Image from "next/image";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+import React, { useRef } from "react";
+import Slider from "react-slick";
+
 import photoEnduits from "../../../public/Photos/Home/enduit1.jpg";
 
 const services = [
@@ -9,12 +14,23 @@ const services = [
   { name: "Enduits", photo: photoEnduits, alt: "Une maison en pierre" },
 ];
 
-const ServiceCarousel = () => {
+const ServiceCarouselMobile = () => {
+  const settings = {
+    dots: true,
+    className: "center",
+    speed: 500,
+    infinite: true,
+    centerPadding: "60px",
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    swipeToSlide: true,
+    // customPaging: (i) => <div className="w-3 h-3 bg-white rounded-full" />,
+  };
   return (
-    <div className="flex bg-background w-4/6 h-96 p-4 overflow-hidden">
-      <div className="h-full flex gap-x-4">
+    <div className="w-5/6">
+      <Slider {...settings}>
         {services.map((service, i) => (
-          <div className=" relative w-1/3 flex-none">
+          <div key={service.name} className=" relative w-1/3 flex-none">
             <Image
               src={service.photo}
               className="object-cover object-center h-full w-full "
@@ -26,9 +42,9 @@ const ServiceCarousel = () => {
             </h1>
           </div>
         ))}
-      </div>
+      </Slider>
     </div>
   );
 };
 
-export default ServiceCarousel;
+export default ServiceCarouselMobile;

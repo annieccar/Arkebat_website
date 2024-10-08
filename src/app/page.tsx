@@ -11,10 +11,10 @@ import JointPierre from "../../public/Photos/Home/joint_pierre.jpg";
 import Maconnerie from "../../public/Photos/Home/maconnerie.jpg";
 import Piscine from "../../public/Photos/Home/Piscine.jpg";
 
-import ServiceCarousel from "./components/ServiceCarousel";
-
 import Button from "./components/Button";
 import { useEffect, useState } from "react";
+
+import ServiceCarouselMobile from "./components/ServiceCarouselMobile";
 
 export default function Home() {
   let [firstImageIndex, setFirstImageIndex] = useState(0);
@@ -111,11 +111,11 @@ export default function Home() {
           </div>
         </div>
 
-        <p className="w-full px-3 text-center mt-4 text-md">
+        <p className="w-full px-3 text-center mt-4 text-md md:w-3/4 lg:text-lg">
           Arkebat est une entreprise générale de{" "}
           <span className="font-bold text-icon">maçonnerie</span> dédiée à
-          l&apos;éco-construction. Nos artisans maçons sont spécialisés dans
-          l&apos;utilisation de matériaux{" "}
+          l&apos;éco-construction.<br></br> Nos artisans maçons sont spécialisés
+          dans l&apos;utilisation de matériaux{" "}
           <span className="font-bold text-icon">écologiques</span> et de
           techniques de construction{" "}
           <span className="font-bold text-icon">durables</span>. <br></br>Nous
@@ -123,7 +123,7 @@ export default function Home() {
           maisons individuelles, création d&apos;extension, à la rénovation
           totale de bâtiments existants.
         </p>
-        <p className="w-full px-3 text-center mt-4 text-md">
+        <p className="w-full px-3 text-center mt-4 text-md hidden md:block md:w-3/4 lg:text-lg ">
           Nous prenons en charge les travaux essentiels à la{" "}
           <span className="font-bold text-icon">solidité</span> et à la
           <span className="font-bold text-icon"> durabilité</span> des
@@ -132,13 +132,12 @@ export default function Home() {
           Notre démarche est aussi axée sur le{" "}
           <span className="font-bold text-icon">conseil </span>
           et l&apos;accompagnement, vous amenant à intégrer des solutions
-          durable et responsable.<br></br> Nos chantiers sont livrés dans le
-          respect des délais et des budgets préalablement définis.
+          durable et responsable.
         </p>
       </section>
       <section className="w-full flex flex-col items-center mt-10">
-        <h1 className="w-4/5 text-center text-3xl">Nos Services</h1>
-        <ServiceCarousel />
+        <h1 className="w-4/5 text-center text-3xl">Prestations</h1>
+        <ServiceCarouselMobile />
       </section>
       <section className="w-full flex flex-col items-center mt-10">
         <Button />

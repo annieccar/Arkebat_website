@@ -7,5 +7,51 @@ h1 {
 }
 
 p {
-  @apply font-text text-gray;
+  @apply font-text text-gray font-light;
+}
+
+.slick-dots {
+  bottom: 10px; /* Position the dots */
+}
+
+.slick-dots li {
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.slick-dots li button {
+  background: white !important;
+  color: white;
+  opacity: 0.5 !important;
+  border-radius: 50% !important;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.slick-dots li.slick-active button {
+  opacity: 1 !important; /* Full opacity for the active dot */
+}
+
+.slick-dots li button:hover {
+  opacity: 0.75; /* Change opacity on hover */
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: white !important;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.slick-dots li button:before {
+  /* display: hidden !important; */
+  opacity: 0 !important;
+  color: white !important;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  display: none !important;
 }
