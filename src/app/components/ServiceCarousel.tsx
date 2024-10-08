@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import photoEnduits from "../../../public/Photos/maison_pierre.jpg";
+import photoEnduits from "../../../public/Photos/Home/enduit1.jpg";
 
 const services = [
   { name: "Enduits", photo: photoEnduits, alt: "Une maison en pierre" },

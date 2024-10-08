@@ -4,10 +4,13 @@ import Image from "next/image";
 import { MdAlternateEmail } from "react-icons/md";
 import { FiPhoneCall } from "react-icons/fi";
 
-import MainPhoto from "../../public/Photos/maison_pierre.jpg";
-import enduitChanvre from "../../public/Photos/ensuitChanvre.jpg";
-import Piscine from "../../public/Photos/piscine.jpg";
-import EnduitPierre from "../../public/Photos/enduitPierre.jpg";
+import BriqueChanvre from "../../public/Photos/Home/brique_chanvre.jpg";
+import Enduit1 from "../../public/Photos/Home/enduit1.jpg";
+import Extension from "../../public/Photos/Home/extension.jpg";
+import JointPierre from "../../public/Photos/Home/joint_pierre.jpg";
+import Maconnerie from "../../public/Photos/Home/maconnerie.jpg";
+import Piscine from "../../public/Photos/Home/Piscine.jpg";
+
 import ServiceCarousel from "./components/ServiceCarousel";
 
 import Button from "./components/Button";
@@ -18,18 +21,26 @@ export default function Home() {
   let [secondImageIndex, setSecondImageIndex] = useState(0);
 
   const photos1 = [
-    { src: MainPhoto, alt: "Maison en pierre" },
+    { src: JointPierre, alt: "Maison en pierre" },
     {
-      src: enduitChanvre,
+      src: Enduit1,
       alt: "Enduit en chanvre",
+    },
+    {
+      src: BriqueChanvre,
+      alt: "Brique de chanvre",
     },
   ];
 
   const photos2 = [
-    { src: Piscine, alt: "Maison en pierre" },
+    { src: Piscine, alt: "Piscine maconnée" },
     {
-      src: EnduitPierre,
-      alt: "Enduit en chanvre",
+      src: Extension,
+      alt: "Extension de maison",
+    },
+    {
+      src: Maconnerie,
+      alt: "Nouvelle",
     },
   ];
 
@@ -61,7 +72,7 @@ export default function Home() {
       clearInterval(interval);
       clearTimeout(timeout);
     };
-  }, []);
+  }, [photos1.length, photos2.length]);
 
   return (
     <div className="bg-background w-full text-white flex flex-col items-center">
@@ -71,7 +82,7 @@ export default function Home() {
        relative flex flex-col items-center justify-center"
         >
           <div className="w-full flex flex-col md:flex-row h-screen">
-            <div className="relative w-full h-1/2 md:h-full md:w-1/2">
+            <div className="relative w-full h-1/2 md:h-full md:w-1/2 transition-opacity duration-1000 ">
               <Image
                 src={photos1[firstImageIndex].src}
                 alt={photos1[firstImageIndex].alt}
@@ -90,11 +101,11 @@ export default function Home() {
           </div>
           <div className="absolute inset-0 bg-background bg-opacity-30"></div>
 
-          <div className="z-10 absolute ">
-            <h1 className="text-center text-4xl lg:text-5xl 2xl:text-6xl font-semibold">
+          <div className="z-10 absolute flex flex-col gap-3 ">
+            <h1 className="text-center text-5xl lg:text-5xl 2xl:text-6xl font-medium">
               Entreprise générale du bâtiment
             </h1>
-            <h2 className="text-center text-2xl lg:text-3xl 2xl:text-4xl font-title font-normal mt-10">
+            <h2 className="text-center text-3xl lg:text-3xl 2xl:text-4xl font-title font-light">
               Gros Oeuvre et Eco Construction
             </h2>
           </div>
@@ -103,26 +114,26 @@ export default function Home() {
         <p className="w-full px-3 text-center mt-4 text-md">
           Arkebat est une entreprise générale de{" "}
           <span className="font-bold text-icon">maçonnerie</span> dédiée à
-          l'éco-construction. Nos artisans maçons sont spécialisés dans
-          l'utilisation de matériaux{" "}
+          l&apos;éco-construction. Nos artisans maçons sont spécialisés dans
+          l&apos;utilisation de matériaux{" "}
           <span className="font-bold text-icon">écologiques</span> et de
           techniques de construction{" "}
           <span className="font-bold text-icon">durables</span>. <br></br>Nous
           proposons une large gamme de service, allant de la construction de
-          maisons individuelles, création d’extension, à la rénovation totale de
-          bâtiments existants.
+          maisons individuelles, création d&apos;extension, à la rénovation
+          totale de bâtiments existants.
         </p>
         <p className="w-full px-3 text-center mt-4 text-md">
           Nous prenons en charge les travaux essentiels à la{" "}
           <span className="font-bold text-icon">solidité</span> et à la
           <span className="font-bold text-icon"> durabilité</span> des
           structures : Terrassement, fondation, maçonnerie, charpente ainsi que
-          les ravalement de façade et création d’assainissement.<br></br>Notre
-          démarche est aussi axée sur le{" "}
+          les ravalement de façade et création d&apos;assainissement.<br></br>
+          Notre démarche est aussi axée sur le{" "}
           <span className="font-bold text-icon">conseil </span>
-          et l'accompagnement, vous amenant à intégrer des solutions durable et
-          responsable.<br></br> Nos chantiers sont livrés dans le respect des
-          délais et des budgets préalablement définis.
+          et l&apos;accompagnement, vous amenant à intégrer des solutions
+          durable et responsable.<br></br> Nos chantiers sont livrés dans le
+          respect des délais et des budgets préalablement définis.
         </p>
       </section>
       <section className="w-full flex flex-col items-center mt-10">
