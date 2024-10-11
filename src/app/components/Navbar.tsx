@@ -23,7 +23,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header>
+    <header className="w-full">
       <nav
         className={`${
           scrolled >= 20 ? "bg-background" : "bg-none"

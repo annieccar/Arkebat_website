@@ -54,7 +54,7 @@ export default function Menu() {
             )}
           </button>
 
-          <Link href="/projets">Réalisations</Link>
+          <Link href="/realisations">Réalisations</Link>
           <Link href="/contact">Contact</Link>
         </div>
         <div onClick={() => setMenuOpen(!menuOpen)}>
@@ -95,7 +95,7 @@ export default function Menu() {
                 Terrassement
               </div>
             </Link>
-            <Link href="/projets">
+            <Link href="/realisations">
               <div className="font-title text-title py-3 pl-3 text-lg font-normal border-b border-gray/50">
                 REALISATIONS
               </div>
