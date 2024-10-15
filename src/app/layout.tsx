@@ -31,10 +31,10 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${josefin_sans.variable} ${overpass.variable}`}
     >
-      <body className="min-h-screen flex flex-col items-center bg-background w-screen">
+      <body className="min-h-screen flex flex-col items-center bg-background">
         {" "}
         <Navbar />
-        <main className="grow">{children}</main>
+        <main className="grow w-full">{children}</main>
         <Footer />
       </body>
     </html>

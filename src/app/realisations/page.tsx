@@ -62,7 +62,7 @@ const Realisations = () => {
   }[];
 
   return (
-    <div className="mt-28 w-screen flex flex-col items-center">
+    <div className="mt-28 w-full flex flex-col items-center">
       <h1 className="text-3xl mb-10">Nos réalisations</h1>
       <div className="w-5/6 xl:w-3/4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center items-center hidden lg:grid ">
         {projets?.map((projet, index) => {
@@ -84,7 +84,7 @@ const Realisations = () => {
                 <h1 className=" text-lg font-normal">{projet.title}</h1>
                 <p className="text-title text-sm">{projet.location}</p>
               </div>
-              <div className="absolute inset-2 solid border-[1px] border-title border-opacity-80" />
+              <div className="absolute inset-2 solid border-[1px] border-title border-opacity-60" />
             </div>
           );
         })}

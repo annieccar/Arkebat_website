@@ -10,6 +10,18 @@ export default function Menu() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [expertiseOpen, setExpertiseOpen] = useState(false);
 
+  const expertises = [
+    { title: "Maçonnerie Gros Oeuvre", link: "/maconnerie" },
+    { title: "Enduits", link: "/enduits" },
+    { title: "Eco Construction", link: "/eco_construction" },
+    { title: "Charpente", link: "/charpente" },
+    { title: "Chaux Chanvre", link: "/chaux_chanvre" },
+    {
+      title: "Terrassement Assainissement",
+      link: "/terrassement-assainissement",
+    },
+  ];
+
   return (
     <div className="h-full">
       <div className="text-title font-title flex h-full items-center">
@@ -30,26 +42,13 @@ export default function Menu() {
                 className="absolute top-full left-0 bg-background w-fit"
                 onClick={() => setExpertiseOpen(false)}
               >
-                <Link href="/maconnerie">
-                  <div className="font-title text-nowrap  text-title text-left hover:bg-title hover:text-background  py-3 px-2 text-lg font-normal border-b border-gray/50">
-                    Maçonnerie conventionnelle
-                  </div>
-                </Link>
-                <Link href="/chaux_chanvre">
-                  <div className="font-title text-title hover:bg-title hover:text-background text-nowrap text-left py-3 px-2 text-lg font-normal border-b border-gray/50">
-                    Chaux-Chanvre
-                  </div>
-                </Link>
-                <Link href="/enduits">
-                  <div className="font-title text-nowrap text-left text-title hover:bg-title hover:text-background py-3 px-2 text-lg font-normal border-b border-gray/50">
-                    Enduits
-                  </div>
-                </Link>
-                <Link href="/terrassement">
-                  <div className="font-title text-nowrap text-left text-title hover:bg-title hover:text-background py-3 px-2 text-lg font-normal border-b border-gray/50">
-                    Terrassement
-                  </div>
-                </Link>
+                {expertises.map((expertise) => (
+                  <Link href={expertise.link}>
+                    <div className="font-title text-nowrap  text-title text-left hover:bg-title hover:text-background  py-3 px-2 text-lg font-normal border-b border-gray/50">
+                      {expertise.title}
+                    </div>
+                  </Link>
+                ))}
               </div>
             )}
           </button>
@@ -75,26 +74,14 @@ export default function Menu() {
             <div className="font-title text-title py-3 pl-3 text-lg font-normal border-b border-gray/50">
               EXPERTISES
             </div>
-            <Link href="/maconnerie">
-              <div className="font-title text-title py-3 pl-10 text-lg font-normal border-b border-gray/50">
-                Maçonnerie conventionnelle
-              </div>
-            </Link>
-            <Link href="/chaux_chanvre">
-              <div className="font-title text-title py-3 pl-10 text-lg font-normal border-b border-gray/50">
-                Chaux-Chanvre
-              </div>
-            </Link>
-            <Link href="/enduits">
-              <div className="font-title text-title py-3 pl-10 text-lg font-normal border-b border-gray/50">
-                Enduits
-              </div>
-            </Link>
-            <Link href="/terrassement">
-              <div className="font-title text-title py-3 pl-10 text-lg font-normal border-b border-gray/50">
-                Terrassement
-              </div>
-            </Link>
+            {expertises.map((expertise) => (
+              <Link href={expertise.link}>
+                <div className="font-title text-title py-3 pl-10 text-lg font-normal border-b border-gray/50">
+                  {expertise.title}
+                </div>
+              </Link>
+            ))}
+
             <Link href="/realisations">
               <div className="font-title text-title py-3 pl-3 text-lg font-normal border-b border-gray/50">
                 REALISATIONS
