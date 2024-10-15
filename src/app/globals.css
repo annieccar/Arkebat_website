@@ -7,5 +7,5 @@ h1 {
 }
 
 p {
-  @apply font-text text-gray;
+  @apply font-text text-gray font-light;
 }
