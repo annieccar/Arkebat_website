@@ -1,18 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import { MdAlternateEmail } from "react-icons/md";
 import { FiPhoneCall } from "react-icons/fi";
 
-import BriqueChanvre from "../../public/Photos/Home/brique_chanvre.jpg";
-import Enduit1 from "../../public/Photos/Home/enduit1.jpg";
-import Extension from "../../public/Photos/Home/extension.jpg";
-import JointPierre from "../../public/Photos/Home/joint_pierre.jpg";
-import Maconnerie from "../../public/Photos/Home/maconnerie.jpg";
-import Piscine from "../../public/Photos/Home/Piscine.jpg";
-
 import Button from "./components/Button";
-import { useEffect, useState } from "react";
 
 import ServiceCarousel from "./components/ServiceCarousel";
 import SliderHomePage from "./components/SliderHomePage";
