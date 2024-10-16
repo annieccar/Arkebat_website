@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formspree/react": "^2.5.1",
     "@splidejs/react-splide": "^0.7.12",
     "next": "14.2.5",
     "react": "^18",

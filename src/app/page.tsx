@@ -1,18 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import { MdAlternateEmail } from "react-icons/md";
 import { FiPhoneCall } from "react-icons/fi";
 
-import BriqueChanvre from "../../public/Photos/Home/brique_chanvre.jpg";
-import Enduit1 from "../../public/Photos/Home/enduit1.jpg";
-import Extension from "../../public/Photos/Home/extension.jpg";
-import JointPierre from "../../public/Photos/Home/joint_pierre.jpg";
-import Maconnerie from "../../public/Photos/Home/maconnerie.jpg";
-import Piscine from "../../public/Photos/Home/Piscine.jpg";
-
 import Button from "./components/Button";
-import { useEffect, useState } from "react";
 
 import ServiceCarousel from "./components/ServiceCarousel";
 import SliderHomePage from "./components/SliderHomePage";
@@ -67,7 +58,7 @@ export default function Home() {
           </div>
         </div>
         <p className="text-sm ml-2 mt-3 ">Lundi - Vendredi - 8h - 18h</p>
-        <Button />
+        <Button title="Nous contacter" />
       </section>
       <section className="xl:w-5/6 flex flex-col md:flex-row md:justify-around md:w-full items-center mt-24 max-[1023px]:hidden">
         <div className="flex text-icon items-center ">
@@ -84,7 +75,7 @@ export default function Home() {
           </div>
         </div>
         <p className="text-lg xl:text-xl ml-2 ">Lundi - Vendredi - 8h - 18h</p>
-        <Button />
+        <Button title="Nous contacter" />
       </section>
     </div>
   );
