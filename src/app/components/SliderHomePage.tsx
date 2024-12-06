@@ -1,6 +1,7 @@
+"use client";
+
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 
 import BriqueChanvre from "../../../public/Photos/Home/brique_chanvre.jpg";
 import Enduit1 from "../../../public/Photos/Home/enduit1.jpg";

@@ -75,7 +75,7 @@ export default function Menu() {
               EXPERTISES
             </div>
             {expertises.map((expertise) => (
-              <Link href={expertise.link}>
+              <Link href={expertise.link} key={expertise.title}>
                 <div className="font-title text-title py-3 pl-10 text-lg font-normal border-b border-gray/50">
                   {expertise.title}
                 </div>
