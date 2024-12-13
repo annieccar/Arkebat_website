@@ -19,13 +19,28 @@ export const ProjectCardDesktop = (props: ProjectCardDesktopProps) => {
   return (
     <div
       key={index}
-      className="w-full h-60 lg:h-72 xl:h-80 relative cursor-pointer"
+      className="w-full aspect-[4/3] relative cursor-pointer"
       onMouseEnter={() => setHoveredIndex(index)}
       onMouseLeave={() => setHoveredIndex(null)}
     >
       <Image
-        src={hoveredIndex === index ? projet.img2 : projet.img1}
-        style={{ objectFit: "cover" }}
+        src={projet.img1}
+        style={{
+          objectFit: "cover",
+          opacity: hoveredIndex === index ? 0 : 1,
+          transition: "opacity 0.5s ease-in-out",
+        }}
+        alt={projet.title}
+        fill
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+      />
+      <Image
+        src={projet.img2}
+        style={{
+          objectFit: "cover",
+          opacity: hoveredIndex === index ? 1 : 0,
+          transition: "opacity 0.5s ease-in-out",
+        }}
         alt={projet.title}
         fill
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -63,10 +78,7 @@ export const ProjectCardMobile = (props: ProjectCardDesktopProps) => {
   console.log(mobileImage);
 
   return (
-    <div
-      key={index}
-      className="w-full h-60 lg:h-72 xl:h-80 relative cursor-pointer"
-    >
+    <div key={index} className="w-full aspect-square  relative cursor-pointer">
       <Image
         src={mobileImage === 2 ? projet.img2 : projet.img1}
         style={{ objectFit: "cover" }}
