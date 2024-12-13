@@ -20,7 +20,7 @@ export default function Navbar() {
     return () => {
       window.removeEventListener("scroll", updatePosition);
     };
-  }, []);
+  }, [scrolled]);
 
   return (
     <header className="w-full">

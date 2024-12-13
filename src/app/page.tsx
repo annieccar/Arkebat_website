@@ -56,7 +56,7 @@ export default function Home() {
           </div>
         </div>
         <p className="text-sm ml-2 mt-3 ">{contact.opening_hours}</p>
-        <Button title="Nous contacter" />
+        <Button title="Nous contacter" isLink={true} />
       </section>
       <section className="xl:w-5/6 flex flex-col md:flex-row md:justify-around md:w-full items-center mt-24 max-[1023px]:hidden">
         <div className="flex text-icon items-center ">
@@ -71,7 +71,7 @@ export default function Home() {
           </div>
         </div>
         <p className="text-lg xl:text-xl ml-2 ">{contact.opening_hours}</p>
-        <Button title="Nous contacter" />
+        <Button title="Nous contacter" isLink={true} />
       </section>
     </div>
   );
