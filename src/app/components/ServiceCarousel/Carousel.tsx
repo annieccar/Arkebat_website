@@ -19,33 +19,26 @@ const Carousel = ({ children }: { children: ReactNode }) => {
   } = usePrevNextButtons(emblaApi);
 
   return (
-    <section className="embla relative w-3/4 md:w-full max-w-[1400px]">
+    <section className="embla relative w-full md:w-full max-w-[360px] sm:max-w-none lg:max-w-[1024px] xl:max-w-[1400px] flex flex-col">
       <div className="embla__viewport overflow-hidden" ref={emblaRef}>
         <div className="embla__container flex mr-8">{children}</div>
       </div>
-      <div className="hidden absolute w-full sm:flex justify-between top-1/2 -translate-y-1/2 ">
-        <PrevButton
-          className="translate-x-2"
-          onClick={onPrevButtonClick}
-          disabled={prevBtnDisabled}
-        />
-        <NextButton
-          className="-translate-x-2"
-          onClick={onNextButtonClick}
-          disabled={nextBtnDisabled}
-        />
-      </div>
 
-      <div className="flex px-2 gap-2 items-center w-full justify-center my-5">
-        {scrollSnaps.map((_, index) => (
-          <DotButton
-            key={index}
-            onClick={() => onDotButtonClick(index)}
-            className={`w-2 h-2 rounded-full ${
-              index === selectedIndex ? " bg-white" : "bg-white/50"
-            }`}
-          />
-        ))}
+      <div className="flex px-2 gap-2 items-center w-full justify-center mt-8">
+        <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
+        <div className="flex px-2 gap-2">
+          {scrollSnaps.map((_, index) => (
+            <DotButton
+              key={index}
+              onClick={() => onDotButtonClick(index)}
+              className={`w-2 lg:w-2.5 lg:h-2.5 h-2 rounded-full ${
+                index === selectedIndex ? " bg-white" : "bg-white/50"
+              }`}
+            />
+          ))}
+        </div>
+
+        <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
       </div>
     </section>
   );

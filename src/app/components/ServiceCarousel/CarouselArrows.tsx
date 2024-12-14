@@ -7,9 +7,9 @@ import React, {
 import { EmblaCarouselType } from "embla-carousel";
 
 import {
-  IoChevronForwardCircleOutline,
-  IoChevronBackCircleOutline,
-} from "react-icons/io5";
+  IoIosArrowDroprightCircle,
+  IoIosArrowDropleftCircle,
+} from "react-icons/io";
 
 type UsePrevNextButtonsType = {
   prevBtnDisabled: boolean;
@@ -61,11 +61,11 @@ export const PrevButton: React.FC<PropType> = (props) => {
 
   return (
     <button
-      className="text-white disabled:text-black pointer"
+      className="text-white disabled:text-white/20 hover:text-white/50 text-3xl lg:text-4xl pointer hidden sm:flex"
       type="button"
       {...restProps}
     >
-      <IoChevronBackCircleOutline size={40} />
+      <IoIosArrowDropleftCircle />
       {children}
     </button>
   );
@@ -75,8 +75,12 @@ export const NextButton: React.FC<PropType> = (props) => {
   const { children, ...restProps } = props;
 
   return (
-    <button className="text-white pointer" type="button" {...restProps}>
-      <IoChevronForwardCircleOutline size={40} />
+    <button
+      className="text-white disabled:text-white/20 hover:text-white/50   text-3xl lg:text-4xl pointer hidden sm:flex"
+      type="button"
+      {...restProps}
+    >
+      <IoIosArrowDroprightCircle />
       {children}
     </button>
   );
