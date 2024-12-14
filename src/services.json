@@ -1,0 +1,18 @@
+[
+    { "name": "Enduits", "photo": "/Photos/Services/enduits.jpg", "alt": "Une maison en pierre", "href": "/enduits" },
+    {
+      "name": "Maçonnerie Gros Oeuvre",
+      "photo": "/Photos/Services/maconnerie.jpg",
+      "alt": "Une maison en pierre", "href": "/maconnerie"
+    },
+    { "name": "Eco Construction", "photo": "/Photos/Services/eco.jpg", "alt": "Une maison en pierre", "href": "/eco_construction" },
+    { "name": "Charpente", "photo": "/Photos/Services/charpente.jpg", "alt": "Une maison en pierre", "href": "/charpente" },
+    { "name": "Chaux Chanvre", "photo": "/Photos/Services/chaux-chanvre.jpg", "alt": "Une maison en pierre", "href": "/chaux_chanvre" },
+    {
+      "name": "Terrassement Assainissement",
+      "photo": "/Photos/Services/assainissement.jpg",
+      "alt": "Une maison en pierre", 
+      "href": "/terrassement_assainissement"
+
+    }
+  ]

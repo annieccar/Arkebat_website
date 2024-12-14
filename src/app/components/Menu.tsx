@@ -1,26 +1,32 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa6";
 
 import menu from "../../../public/menu.png";
+import expertises from "../../services.json";
 
 export default function Menu() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [expertiseOpen, setExpertiseOpen] = useState(false);
 
-  const expertises = [
-    { title: "Maçonnerie Gros Oeuvre", link: "/maconnerie" },
-    { title: "Enduits", link: "/enduits" },
-    { title: "Eco Construction", link: "/eco_construction" },
-    { title: "Charpente", link: "/charpente" },
-    { title: "Chaux Chanvre", link: "/chaux_chanvre" },
-    {
-      title: "Terrassement Assainissement",
-      link: "/terrassement-assainissement",
-    },
-  ];
+  useEffect(() => {
+    // Close the menu when clicking outside
+    const handleClickOutside = (event: any) => {
+      if (
+        expertiseOpen &&
+        !event.target.closest(".expertise-menu") // Adjust selector to match your menu container
+      ) {
+        setExpertiseOpen(false);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [expertiseOpen]);
 
   return (
     <div className="h-full">
@@ -38,18 +44,20 @@ export default function Menu() {
               <FaChevronUp size={15} />
             )}
             {expertiseOpen && (
-              <div
-                className="absolute top-full left-0 bg-background w-fit"
-                onClick={() => setExpertiseOpen(false)}
-              >
-                {expertises.map((expertise) => (
-                  <Link href={expertise.link} key={expertise.title}>
-                    <div className="font-title text-nowrap  text-title text-left hover:bg-title hover:text-background  py-3 px-2 text-lg font-normal border-b border-gray/50">
-                      {expertise.title}
-                    </div>
-                  </Link>
-                ))}
-              </div>
+              <>
+                <div
+                  className="absolute top-full left-0 bg-background w-fit"
+                  onClick={() => setExpertiseOpen(false)}
+                >
+                  {expertises.map((expertise) => (
+                    <Link href={expertise.href} key={expertise.name}>
+                      <div className="font-title text-nowrap  text-title text-left hover:bg-title hover:text-background  py-3 px-2 text-lg font-normal border-b border-gray/50">
+                        {expertise.name}
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </>
             )}
           </button>
 
@@ -75,9 +83,9 @@ export default function Menu() {
               EXPERTISES
             </div>
             {expertises.map((expertise) => (
-              <Link href={expertise.link} key={expertise.title}>
+              <Link href={expertise.href} key={expertise.name}>
                 <div className="font-title text-title py-3 pl-10 text-lg font-normal border-b border-gray/50">
-                  {expertise.title}
+                  {expertise.name}
                 </div>
               </Link>
             ))}

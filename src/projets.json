@@ -1,26 +1,42 @@
 [
     {
-      "title": "Construction d'une piscine maçonnée",
-      "location": "Saint-Pierre-D'Irube",
-      "img1": "/Photos/Services/enduits.jpg",
-      "img2": "/Photos/Services/maconnerie.jpg"
+      "title": "Sablage et reprise totale des façades",
+      "location": "Mouguerre",
+      "img1": "/Photos/Projets/enduit-avant.jpg",
+      "img2": "/Photos/Projets/enduit-apres.jpg"
     },
     {
-        "title": "Construction d'une piscine maçonnée",
-        "location": "Saint-Pierre-D'Irube",
-        "img1": "/Photos/Services/enduits.jpg",
-        "img2": "/Photos/Services/maconnerie.jpg"
+        "title": "Réalisation d’une extension en brique monomur",
+        "location": "Bayone",
+        "img1": "/Photos/Projets/extension-avant.jpg",
+        "img2": "/Photos/Projets/extension-apres.jpg"
     },
     {
-        "title": "Construction d'une piscine maçonnée",
-        "location": "Saint-Pierre-D'Irube",
-        "img1": "/Photos/Services/enduits.jpg",
-        "img2": "/Photos/Services/maconnerie.jpg"
+        "title": "Mis en place d'une isolation par l'extérieur en fibres de bois, étape de la première couche tramée",
+        "location": "Biarritz",
+        "img1": "/Photos/Projets/ite-avant.jpg",
+        "img2": "/Photos/Projets/ite-apres.jpg"
     },
     {
-        "title": "Construction d'une piscine maçonnée",
-        "location": "Saint-Pierre-D'Irube",
-        "img1": "/Photos/Services/enduits.jpg",
-        "img2": "/Photos/Services/maconnerie.jpg"
+        "title": "Rénovation totale: Création d'ouvertures, extension de briques de chanvre Biosys et mur de soutènement altus",
+        "location": "Mouguerre",
+        "img1": "/Photos/Projets/mouguerre-avant.jpg",
+        "img2": "/Photos/Projets/mouguerre-apres.jpg",
+        "autresPhotos": ["/Photos/Projets/extension-apres"]
+    },
+    {
+        "title": "Création d’ouvertures, ravalement de façade et construction d’une piscine",
+        "location": "Saint-Pierre-d'Irube",
+        "img1": "/Photos/Projets/piscine-avant.jpg",
+        "img2": "/Photos/Projets/piscine-apres.jpg",
+        "autresPhotos": ["/Photos/Projets/piscine-3.jpg"]
+    },
+    {
+        "title": "Studio réalisé en brique de chanvre Biosys et enduit chaux.",
+        "location": "Ciboure",
+        "img1": "/Photos/Projets/studio-avant.jpg",
+        "img2": "/Photos/Projets/studio-apres.jpg"
+       
     }
+
   ]
