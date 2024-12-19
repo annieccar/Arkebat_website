@@ -9,13 +9,20 @@
         "title": "Réalisation d’une extension en brique monomur",
         "location": "Bayone",
         "img1": "/Photos/Projets/extension-avant.jpg",
-        "img2": "/Photos/Projets/extension-apres.jpg"
+        "img2": "/Photos/Projets/extension-avant.jpg"
+    },
+    {
+        "title": "TBA",
+        "location": "TBA",
+        "img1": "/Photos/Projets/biosys-avant.jpg",
+        "img2": "/Photos/Projets/biosys-apres.jpg"
+       
     },
     {
         "title": "Mis en place d'une isolation par l'extérieur en fibres de bois, étape de la première couche tramée",
         "location": "Biarritz",
         "img1": "/Photos/Projets/ite-avant.jpg",
-        "img2": "/Photos/Projets/ite-apres.jpg"
+        "img2": "/Photos/Projets/ite-apres2.jpg"
     },
     {
         "title": "Rénovation totale: Création d'ouvertures, extension de briques de chanvre Biosys et mur de soutènement altus",

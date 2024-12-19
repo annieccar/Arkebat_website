@@ -1,16 +1,17 @@
  [ 
     [ 
     { "src": "joint_pierre.jpg", "alt": "Maison en pierre" },
-    {
-      "src": "enduit1.jpg",
-      "alt": "Enduit en chanvre"
-    },
+    { "src": "Piscine.jpg", "alt": "Piscine maconnée" },
+   
     {
       "src": "brique_Chanvre.jpg",
       "alt": "Brique de chanvre"
     }], 
     [
-    { "src": "Piscine.jpg", "alt": "Piscine maconnée" },
+      {
+        "src": "enduit1.jpg",
+        "alt": "Enduit en chanvre"
+      },
     {
       "src": "extension.jpg",
       "alt": "Extension de maison"
