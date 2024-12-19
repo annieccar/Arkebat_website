@@ -6,6 +6,14 @@ h1 {
   @apply font-title text-white;
 }
 
+h2 {
+  @apply font-title text-white;
+}
+
 p {
+  @apply font-text text-gray font-light;
+}
+
+li {
   @apply font-text text-gray font-light;
 }

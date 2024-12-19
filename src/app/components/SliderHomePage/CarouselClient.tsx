@@ -56,7 +56,7 @@ function CarouselClient() {
             {photoArray.map((photo, photoIndex) => (
               <Image
                 key={photo.alt}
-                src={`/Photos/Home/${photo.src}`}
+                src={photo.src}
                 alt={photo.alt}
                 fill
                 sizes="(max-width:768px): 100vw, 50vw"

@@ -12,14 +12,11 @@ export default function Footer() {
       </div>
       <div className="flex text-gray md:w-3/4 text-xs md:text-sm lg:text-base lg:justify-start lg:gap-4 justify-around mt-6 mb-4 lg:my-0 text-center w-full">
         <p className="px-2">© 2024 Arkébat</p>
-        <Link href={"/mentions"} className="px-2">
+        <Link href={"/mentions-légales"} className="px-2">
           Mentions légales
         </Link>
         <Link href={"/cgv"} className="px-2">
           CGV
-        </Link>
-        <Link href={"/cookies"} className="px-2">
-          Cookies
         </Link>
       </div>
     </footer>
