@@ -5,7 +5,13 @@ import { DotButton, useDotButton } from "./CarouselDotButtons";
 import { PrevButton, NextButton, usePrevNextButtons } from "./CarouselArrows";
 import useEmblaCarousel from "embla-carousel-react";
 
-const Carousel = ({ children }: { children: ReactNode }) => {
+const Carousel = ({
+  children,
+  isProjectCarousel,
+}: {
+  children: ReactNode;
+  isProjectCarousel?: boolean;
+}) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ align: "start" });
 
   const { selectedIndex, scrollSnaps, onDotButtonClick } =
@@ -19,13 +25,25 @@ const Carousel = ({ children }: { children: ReactNode }) => {
   } = usePrevNextButtons(emblaApi);
 
   return (
-    <section className="embla relative w-full md:w-full max-w-[360px] sm:max-w-none lg:max-w-[1024px] xl:max-w-[1400px] flex flex-col">
+    <section
+      className={`embla relative w-full md:w-full ${
+        !isProjectCarousel ? "max-w-[360px]" : ""
+      }  sm:max-w-none lg:max-w-[1024px] xl:max-w-[1400px] flex flex-col`}
+    >
       <div className="embla__viewport overflow-hidden" ref={emblaRef}>
-        <div className="embla__container flex mr-8">{children}</div>
+        <div
+          className={`embla__container flex ${
+            !isProjectCarousel ? "mr-8" : ""
+          }`}
+        >
+          {children}
+        </div>
       </div>
 
       <div className="flex px-2 gap-2 items-center w-full justify-center mt-8">
-        <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
+        {!isProjectCarousel && (
+          <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
+        )}
         <div className="flex px-2 gap-2">
           {scrollSnaps.map((_, index) => (
             <DotButton
@@ -38,7 +56,9 @@ const Carousel = ({ children }: { children: ReactNode }) => {
           ))}
         </div>
 
-        <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
+        {!isProjectCarousel && (
+          <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
+        )}
       </div>
     </section>
   );
