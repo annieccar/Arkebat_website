@@ -1,23 +1,23 @@
  [ 
     [ 
-    { "src": "joint_pierre.jpg", "alt": "Maison en pierre" },
-    { "src": "Piscine.jpg", "alt": "Piscine maconnée" },
+    { "src": "/Photos/Home/joint_pierre.jpg", "alt": "Maison en pierre" },
+    { "src": "/Photos/Home/Piscine.jpg", "alt": "Piscine maconnée" },
    
     {
-      "src": "brique_Chanvre.jpg",
+      "src": "/Photos/Home/brique_chanvre.jpg",
       "alt": "Brique de chanvre"
     }], 
     [
       {
-        "src": "enduit1.jpg",
+        "src": "/Photos/Home/enduit1.jpg",
         "alt": "Enduit en chanvre"
       },
     {
-      "src": "extension.jpg",
+      "src": "/Photos/Home/extension.jpg",
       "alt": "Extension de maison"
     },
     {
-      "src": "maconnerie.jpg",
+      "src": "/Photos/Home/maconnerie.jpg",
       "alt": "Nouvelle"
     }]
 ]

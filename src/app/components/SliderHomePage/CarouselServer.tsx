@@ -17,7 +17,7 @@ function CarouselServer() {
             className="relative w-full h-1/2 md:h-full md:w-1/2 transition-opacity ease-in-out duration-1000 "
           >
             <Image
-              src={`/Photos/Home/${photo.src}`}
+              src={photo.src}
               alt={photo.alt}
               fill
               sizes="(max-width:768px): 100vw, 50vw"

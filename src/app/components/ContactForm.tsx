@@ -8,7 +8,7 @@ export default function ContactForm() {
 
   if (state.succeeded) {
     return (
-      <p className="text-lg font-bold text-icon w-4/5">
+      <p className="text-lg font-bold text-icon w-4/5 text-center mt-20">
         Merci pour votre message, nous reviendrons vers vous très rapidement!
       </p>
     );

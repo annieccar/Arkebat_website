@@ -37,7 +37,7 @@ export default function Menu() {
             className="flex text-white items-center gap-1 relative h-full"
             onClick={() => setExpertiseOpen(!expertiseOpen)}
           >
-            <div>Expertises</div>
+            <div>Prestations</div>
             {!expertiseOpen ? (
               <FaChevronDown size={15} />
             ) : (
@@ -80,7 +80,7 @@ export default function Menu() {
               </div>
             </Link>
             <div className="font-title text-title py-3 pl-3 text-lg font-normal border-b border-gray/50">
-              EXPERTISES
+              PRESTATIONS
             </div>
             {expertises.map((expertise) => (
               <Link href={expertise.href} key={expertise.name}>
