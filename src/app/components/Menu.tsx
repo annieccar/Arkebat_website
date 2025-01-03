@@ -37,7 +37,7 @@ export default function Menu() {
             className="flex text-white items-center gap-1 relative h-full"
             onClick={() => setExpertiseOpen(!expertiseOpen)}
           >
-            <div>PRESTATIONS</div>
+            <div>Prestations</div>
             {!expertiseOpen ? (
               <FaChevronDown size={15} />
             ) : (
