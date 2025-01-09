@@ -13,7 +13,7 @@ function CarouselClient() {
   const photos2 = photos[1];
 
   useEffect(() => {
-    const interval = setInterval(() => {
+    const firstTimeout = setTimeout(() => {
       setFirstImageIndex((prevIndex) => {
         if (prevIndex < photos1.length - 1) {
           return prevIndex + 1;
@@ -21,24 +21,30 @@ function CarouselClient() {
           return 0;
         }
       });
-    }, 6000);
-
-    const timeout = setTimeout(() => {
-      const interval2 = setInterval(() => {
-        setSecondImageIndex((prevIndex) => {
-          if (prevIndex < photos2.length - 1) {
+      const interval = setInterval(() => {
+        setFirstImageIndex((prevIndex) => {
+          if (prevIndex < photos1.length - 1) {
             return prevIndex + 1;
           } else {
             return 0;
           }
         });
       }, 6000);
-      return () => clearInterval(interval2);
+      return () => clearInterval(interval);
     }, 3000);
 
+    const interval2 = setInterval(() => {
+      setSecondImageIndex((prevIndex) => {
+        if (prevIndex < photos2.length - 1) {
+          return prevIndex + 1;
+        } else {
+          return 0;
+        }
+      });
+    }, 6000);
     return () => {
-      clearInterval(interval);
-      clearTimeout(timeout);
+      clearInterval(interval2);
+      clearTimeout(firstTimeout);
     };
   }, [photos1.length, photos2.length]);
 
