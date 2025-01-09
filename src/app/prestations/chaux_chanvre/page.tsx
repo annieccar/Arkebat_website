@@ -1,5 +1,48 @@
 import React from "react";
 import { Gallery } from "next-gallery";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Arkébat - Isolation Écologique : Chaux-Chanvre pour Votre Habitat",
+  description:
+    "Découvrez la technique d'isolation écologique à base de chaux-chanvre d'Arkébat. Une solution naturelle, durable et efficace pour réguler l'humidité et préserver votre confort.",
+  keywords: [
+    "chaux-chanvre",
+    "isolation écologique",
+    "isolation murale",
+    "régulation humidité",
+    "bâtiment durable",
+    "construction écologique",
+    "rénovation écologique",
+    "protection contre la condensation",
+    "isolation à la chaux",
+    "enduit chaux-chanvre",
+    "technique de projection",
+    "isolation thermique",
+    "isolation respirante",
+    "chaux-chanvre rénovation",
+  ],
+  openGraph: {
+    title: "Arkébat - Isolation Écologique : Chaux-Chanvre pour Votre Habitat",
+    description:
+      "Spécialistes en isolation écologique, Arkébat propose des solutions en chaux-chanvre pour réguler l'humidité et améliorer la performance thermique de vos bâtiments en Pays Basque et Sud Landes.",
+    url: "https://arkebat.fr/prestations/chaux_chanvre",
+    images: [
+      {
+        url: "https://arkebat.fr/Photos/chaux_chanvre/IMG_4723.jpg",
+        alt: "Chaux-Chanvre – Arkébat : Application de l'isolant chaux-chanvre",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Isolation Écologique au Chaux-Chanvre – Arkébat",
+    description:
+      "Améliorez la performance énergétique de votre bâtiment avec l'isolation en chaux-chanvre d'Arkébat. Une solution naturelle, durable et efficace pour réguler l'humidité et préserver votre confort.",
+    images: "https://arkebat.fr/Photos/chaux_chanvre/IMG_4723.jpg",
+  },
+};
 
 const ChauxChanvre = () => {
   const images = [
@@ -26,7 +69,7 @@ const ChauxChanvre = () => {
   const lastRowBehavior = "fill";
 
   return (
-    <div className="mt-20 px-10 max-w-[600px] lg:max-w-[800px] xl:max-w-[1024px] mx-auto ">
+    <div className="mt-20 px-10 max-w-[600px] lg:max-w-[800px] xl:max-w-[1024px] 2xl:max-w-[1300px] mx-auto ">
       <h1 className="py-10 text-center text-2xl md:text-3xl">Chaux-Chanvre</h1>
       <p className="text-justify text-base md:text-base lg:text-lg mb-5">
         Le chaux-chanvre, qu&apos;il soit projeté ou banché, constitue une

@@ -1,5 +1,44 @@
 import React from "react";
 import { Gallery } from "next-gallery";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Arkébat - Terrassement & Assainissement",
+  description:
+    "Arkébat réalise vos travaux de terrassement, de fondations, de démolition, de réseaux, ainsi que l'installation de systèmes d'assainissement autonome et de récupération d'eau pluviale.",
+  keywords: [
+    "assainissement",
+    "travaux de terrassement",
+    "fondations",
+    "démolition",
+    "réseaux",
+    "accès chantier",
+    "assainissement autonome",
+    "cuve de récupération d'eau pluviale",
+    "installation assainissement",
+    "construction durable",
+  ],
+  openGraph: {
+    title: "Arkébat - Terrassement & Assainissement",
+    description:
+      "Découvrez nos services de terrassement et d'assainissement pour vos projets de construction : fondations, réseaux, démolition, ainsi que la pose de filières d'assainissement autonome.",
+    url: "https://arkebat.fr/prestations/terrassement_assainissement",
+    images: [
+      {
+        url: "https://arkebat.fr/Photos/terrassement/RLHU5043.jpg",
+        alt: "Pose d'une station d'assainissement autonome – Arkébat",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Arkébat - Terrassement & Assainissement",
+    description:
+      "Arkébat propose des solutions de terrassement, de fondations et d'assainissement autonome pour vos projets de construction. Contactez-nous pour plus d'informations.",
+    images: "https://arkebat.fr/Photos/terrassement/RLHU5043.jpg",
+  },
+};
 
 const Terrassement = () => {
   const images = [
@@ -36,7 +75,7 @@ const Terrassement = () => {
   const lastRowBehavior = "fill";
 
   return (
-    <div className="mt-20 px-10 max-w-[600px] lg:max-w-[800px] xl:max-w-[1024px] mx-auto ">
+    <div className="mt-20 px-10 max-w-[600px] lg:max-w-[800px] xl:max-w-[1024px] 2xl:max-w-[1300px] mx-auto ">
       <h1 className="py-10 text-center text-2xl md:text-3xl">
         Terrassement et Assainissement
       </h1>

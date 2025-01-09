@@ -42,14 +42,14 @@ const Realisations = () => {
   return (
     <div className=" relative mt-28 w-full flex flex-col items-center z-0">
       <h1 className="text-3xl mb-10">Nos réalisations</h1>
-      <div className="w-5/6 max-w-[1024px] grid-cols-2 gap-14 justify-center items-center hidden lg:grid ">
+      <div className="w-5/6 max-w-[1024px] xl:max-w-[1200px] grid-cols-2 gap-14 justify-center items-center hidden laptop:grid ">
         {projets?.map((projet, index) => {
           return (
             <ProjectCardDesktop index={index} projet={projet} key={index} />
           );
         })}
       </div>
-      <div className="w-5/6 sm:w-2/3 md:w-1/2  flex flex-col gap-10 items-center lg:hidden ">
+      <div className="w-5/6 sm:w-2/3 md:w-1/2  flex flex-col gap-10 items-center laptop:hidden ">
         {projets?.map((projet, index) => {
           return (
             <div

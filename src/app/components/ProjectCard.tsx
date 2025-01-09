@@ -22,7 +22,7 @@ export const ProjectCardDesktop = (props: ProjectCardDesktopProps) => {
   return (
     <div
       key={index}
-      className="w-full aspect-[4/3] relative cursor-pointer"
+      className="w-full aspect-[4/3] relative "
       onMouseEnter={() => setHoveredIndex(index)}
       onMouseLeave={() => setHoveredIndex(null)}
     >

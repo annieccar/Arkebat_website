@@ -1,12 +1,46 @@
 import React from "react";
 import { Gallery } from "next-gallery";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title:
+    "Arkebat- Enduits à la Chaux et Monocouches pour Ravalement de Façade, Pays Basque & Sud Landes",
+  description:
+    "Découvrez nos solutions d'enduits à la chaux et monocouches pour le ravalement de façade. Arkébat, spécialiste en maçonnerie, vous propose des finitions durables et esthétiques pour vos bâtiments dans le Pays Basque et le Sud des Landes",
+  openGraph: {
+    title:
+      "Arkebat- Enduits à la Chaux et Monocouches pour Ravalement de Façade, Pays Basque & Sud Landes",
+    description:
+      "Découvrez nos solutions d'enduits à la chaux et monocouches pour le ravalement de façade. Arkébat, spécialiste en maçonnerie, vous propose des finitions durables et esthétiques pour vos bâtiments dans le Pays Basque et le Sud des Landes",
+    url: "https://arkebat.fr/prestations/enduits",
+    images: [
+      {
+        url: "https://arkebat.fr/Photos/enduits/enduits-apres.jpg",
+        alt: " Enduit de façade réaliseé par Arkebat",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Arkebat- Enduits à la Chaux et Monocouches pour Ravalement de Façade, Pays Basque & Sud Landes",
+    description:
+      "Découvrez nos solutions d'enduits à la chaux et monocouches pour le ravalement de façade. Arkébat, spécialiste en maçonnerie, vous propose des finitions durables et esthétiques pour vos bâtiments dans le Pays Basque et le Sud des Landes",
+    images: "https://arkebat.fr/Photos/maconnerie/IMG_3199.jpg",
+  },
+};
 const Enduits = () => {
   const images = [
     {
       src: "/Photos/enduits/IMG_0564.jpg",
       aspect_ratio: 4032 / 3024,
       alt: "Application de la sous-couche d'enduit",
+    },
+    {
+      src: "/Photos/enduits/enduits-apres.jpg",
+      aspect_ratio: 4032 / 3024,
+      alt: "Enduit de ravalement de façade",
     },
     {
       src: "/Photos/enduits/IMG_3735.jpg",
@@ -26,7 +60,7 @@ const Enduits = () => {
   const lastRowBehavior = "fill";
 
   return (
-    <div className="mt-20 px-10 max-w-[600px] lg:max-w-[800px] xl:max-w-[1024px] mx-auto ">
+    <div className="mt-20 px-10 max-w-[600px] lg:max-w-[800px] xl:max-w-[1024px] 2xl:max-w-[1300px] mx-auto">
       <h1 className="py-10 text-center text-2xl md:text-3xl">Enduits</h1>
       <h2 className="mb-5 text-xl md:text-2xl">
         Solutions d&apos;enduits pour ravalement de façade

@@ -1,5 +1,47 @@
 import React from "react";
 import { Gallery } from "next-gallery";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Arkébat - Charpente Bois : Construction et Aménagement Durable",
+  description:
+    "Découvrez les prestations d'Arkébat en charpente bois, offrant des solutions traditionnelles ou industrielles, ainsi que des aménagements extérieurs en bois de qualité.",
+  keywords: [
+    "charpente bois",
+    "charpente traditionnelle",
+    "charpente industrielle",
+    "aménagement extérieur bois",
+    "bardage bois",
+    "terrasses en bois",
+    "brise-vues bois",
+    "bois massif",
+    "pin des Landes",
+    "Shou Sugi Ban",
+    "maçonnerie et charpente",
+    "construction durable",
+    "aménagement bois",
+  ],
+  openGraph: {
+    title: "Arkébat - Charpente Bois : Construction et Aménagement Durable",
+    description:
+      "Spécialistes en charpente bois, Arkébat propose des charpentes traditionnelles et industrielles, ainsi que des aménagements extérieurs en bois robustes et esthétiques.",
+    url: "https://arkebat.fr/prestations/charpente",
+    images: [
+      {
+        url: "https://arkebat.fr/Photos/charpente/IMG_4893.jpg",
+        alt: "Charpente en bois – Arkébat",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Charpente Bois – Arkébat",
+    description:
+      "Découvrez les charpentes bois d'Arkébat : des solutions en bois massif pour vos projets de construction et aménagement extérieur, alliant robustesse et esthétique.",
+    images: "https://arkebat.fr/Photos/charpente/IMG_4893.jpg",
+  },
+};
 
 const Charpente = () => {
   const images = [
@@ -16,7 +58,7 @@ const Charpente = () => {
   const lastRowBehavior = "fill";
 
   return (
-    <div className="mt-20 px-10 max-w-[600px] lg:max-w-[800px] xl:max-w-[1024px] mx-auto ">
+    <div className="mt-20 px-10 max-w-[600px] lg:max-w-[800px] xl:max-w-[1024px] 2xl:max-w-[1300px] mx-auto">
       <h1 className="py-10 text-center text-2xl md:text-3xl">Charpente</h1>
       <p className="text-justify text-base md:text-base lg:text-lg mb-5">
         Nous réalisons des charpentes traditionnelles ou industrielles, ainsi

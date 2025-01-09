@@ -1,5 +1,48 @@
 import React from "react";
 import { Gallery } from "next-gallery";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Arkébat - Maçonnerie & Gros Oeuvre : Construction Durable",
+  description:
+    "Découvrez les services de maçonnerie et gros œuvre d'Arkébat, spécialisés dans la construction de fondations, murs porteurs, extensions, et plus.",
+  keywords: [
+    "maçonnerie",
+    "gros œuvre",
+    "construction durable",
+    "fondations",
+    "extension",
+    "murs porteurs",
+    "maçon pays basque",
+    "maçonnerie éco-construction",
+    "construction écologique",
+    "murs de soutènement",
+    "création d'ouvertures",
+    "piscines",
+    "dalles béton armé",
+    "réalisation d'extensions",
+  ],
+  openGraph: {
+    title: "Arkébat - Maçonnerie & Gros Oeuvre : Construction Durable",
+    description:
+      "Spécialistes en maçonnerie et gros œuvre, Arkébat réalise des fondations, des murs porteurs, des extensions, et bien plus encore. Découvrez nos réalisations durables.",
+    url: "https://arkebat.fr/prestations/maconnerie",
+    images: [
+      {
+        url: "https://arkebat.fr/Photos/maconnerie/IMG_3199.jpg",
+        alt: "Maçonnerie – Arkébat : Réalisation de fondations",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Maçonnerie & Gros Oeuvre – Arkébat",
+    description:
+      "Découvrez les services de maçonnerie d'Arkébat : extension, fondations, murs porteurs, et plus, dans une démarche de construction durable.",
+    images: "https://arkebat.fr/Photos/maconnerie/IMG_3199.jpg",
+  },
+};
 
 const Maçonnerie = () => {
   const images = [
@@ -31,7 +74,7 @@ const Maçonnerie = () => {
   const lastRowBehavior = "fill";
 
   return (
-    <div className="mt-20 px-10 max-w-[600px] lg:max-w-[800px] xl:max-w-[1024px] mx-auto ">
+    <div className="mt-20 px-10 max-w-[600px] lg:max-w-[800px] xl:max-w-[1024px] 2xl:max-w-[1300px] mx-auto ">
       <h1 className="py-10 text-center text-2xl md:text-3xl">
         Maçonnerie & Gros Oeuvre
       </h1>

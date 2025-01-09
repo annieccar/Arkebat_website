@@ -1,5 +1,25 @@
+import { Metadata } from "next";
 import Link from "next/link";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Mentions Légales - Arkébat",
+  description:
+    "Consultez les mentions légales d'Arkébat, qui détaillent les informations légales obligatoires relatives à notre site et à notre activité de construction et rénovation.",
+  openGraph: {
+    title: "Mentions Légales - Arkébat",
+    description:
+      "Les mentions légales d'Arkébat détaillent les informations nécessaires sur notre entreprise et le site web, conformément aux exigences légales.",
+    url: "https://arkebat.fr/mentions_legales",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Mentions Légales - Arkébat",
+    description:
+      "Accédez aux mentions légales d'Arkébat, où vous trouverez toutes les informations légales requises pour notre site web et nos services.",
+  },
+};
 
 function mentions() {
   return (

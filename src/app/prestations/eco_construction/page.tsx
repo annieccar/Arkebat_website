@@ -1,6 +1,37 @@
 import React from "react";
 import { Gallery } from "next-gallery";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Eco-Construction: Des bâtiments durables avec Arkébat",
+  description:
+    "Chez Arkebat, nous construisons des bâtiments respectueux de l'environnement en utilisant des matériaux écologiques comme le béton de chanvre, la terre crue, et le liège. Découvrez notre approche de la construction durable.",
+  keywords:
+    "eco-construction, béton de chanvre, terre crue, liège, Arkebat, Pays Basque, matériaux écologiques, bâtiments durables, rénovation écologique, construction responsable",
+  openGraph: {
+    title: "Eco-Construction: Des bâtiments durables avec Arkébat",
+    description:
+      "Arkébat vous propose des constructions durables avec des matériaux écologiques tels que le béton de chanvre et le liège. Découvrez nos solutions pour un habitat plus respectueux de l'environnement.",
+    url: "https://www.yourwebsite.com/prestations/eco_construction",
+    siteName: "Arkébat",
+    images: [
+      {
+        url: "/Photos/eco/IMG_1870.jpg",
+        width: 4032,
+        height: 3024,
+        alt: "Extension en briques de chanvre Biosys",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Eco-Construction: Des bâtiments durables avec Arkébat",
+    description:
+      "Découvrez l'éco-construction avec Arkébat: des bâtiments durables construits avec des matériaux écologiques.",
+    images: ["https://www.yourwebsite.com/Photos/eco/IMG_1870.jpg"],
+  },
+};
 
 const Eco = () => {
   const imagesBiosys = [
@@ -45,7 +76,7 @@ const Eco = () => {
   const lastRowBehavior = "fill";
 
   return (
-    <div className="mt-20 px-10 max-w-[600px] lg:max-w-[800px] xl:max-w-[1024px] mx-auto ">
+    <div className="mt-20 px-10 max-w-[600px] lg:max-w-[800px] xl:max-w-[1024px] 2xl:max-w-[1300px] mx-auto ">
       <h1 className="py-10 text-center text-2xl md:text-3xl">
         Eco-Construction: Des bâtiments durables avec Arkébat
       </h1>

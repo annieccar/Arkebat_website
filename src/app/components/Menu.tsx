@@ -51,7 +51,7 @@ export default function Menu() {
                 >
                   {expertises.map((expertise) => (
                     <Link href={expertise.href} key={expertise.name}>
-                      <div className="font-title text-nowrap  text-title text-left hover:bg-title hover:text-background  py-3 px-2 text-lg font-normal border-b border-gray/50">
+                      <div className="font-title text-nowrap  text-title text-left hover:bg-title/20  py-3 px-2 text-lg font-normal border-b border-gray/50">
                         {expertise.name}
                       </div>
                     </Link>
