@@ -10,6 +10,10 @@ h2 {
   @apply font-title text-white;
 }
 
+h3 {
+  @apply font-title text-white;
+}
+
 p {
   @apply font-text text-gray font-light;
 }

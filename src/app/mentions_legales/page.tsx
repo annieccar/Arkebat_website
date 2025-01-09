@@ -10,15 +10,17 @@ function mentions() {
       <h2 className=" pb-5 text-lg md:text-xl">Mentions légales</h2>
       <ul className="text-justify text-sm  md:text-base mb-5 list-disc pl-5">
         <li>
-          Identité de l'enreprise:<br></br> Arkebat SARL 14 allée de cantau
+          Identité de l&apos;enreprise:<br></br> Arkebat SARL 14 allée de cantau
           64600 Anglet{" "}
         </li>
-        <li>Numéro d'immatriculation au RCS: 952 142 701 R.C.S. Bayonne </li>
+        <li>
+          Numéro d&apos;immatriculation au RCS: 952 142 701 R.C.S. Bayonne{" "}
+        </li>
         <li>Adresse mail: arkebat.renovation@gmail.com </li>
         <li>Numéro de téléphone: 06 84 59 05 96/ 06 10 69 63 83 </li>
-        <li>Numéro d'identification à la TVA: FR51952142701 </li>
+        <li>Numéro d&apos;identification à la TVA: FR51952142701 </li>
         <li>SIRET: 952 142 701 00012 </li>
-        <li>Identité de l'hébergeur du site :</li>
+        <li>Identité de l&apos;hébergeur du site :</li>
         <ul className="text-justify text-sm  md:text-base mb-5  pl-5">
           <li>Hébergeur : Vercel Inc.</li>
           <li>Adresse : 340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis</li>
