@@ -35,31 +35,31 @@ const Maçonnerie = () => {
       <h1 className="py-10 text-center text-2xl md:text-3xl">
         Maçonnerie & Gros Oeuvre
       </h1>
-      <p className="text-justify text-sm md:text-base lg:text-lg mb-5">
-        Notre entreprise prend en charge l’ensemble des travaux de structure et
-        de fondations, que ce soit pour une extension, une maison individuelle
-        ou un local commercial.
+      <p className="text-justify text-base md:text-base lg:text-lg mb-5">
+        Notre entreprise prend en charge l&apos;ensemble des travaux de
+        structure et de fondations, que ce soit pour une extension, une maison
+        individuelle ou un local commercial.
       </p>
-      <p className="text-justify text-sm md:text-base lg:text-lg mb-5">
+      <p className="text-justify text-base md:text-base lg:text-lg mb-5">
         Grâce à une équipe qualifiée et expérimentée, nous assurons :
       </p>
-      <ul className="text-justify text-sm  md:text-base lg:text-lg mb-5 list-disc pl-5">
-        <li className="text-justify text-sm  md:text-base lg:text-lg">
+      <ul className="text-justify text-base  md:text-base lg:text-lg mb-5 list-disc pl-5">
+        <li className="text-justify text-base  md:text-base lg:text-lg">
           La construction de murs porteurs
         </li>
         <li>La réalisation de dalles en béton armé</li>
         <li>Les ouvrages de maçonnerie générale</li>
       </ul>{" "}
-      <p className="text-justify text-sm md:text-base mb-5 lg:text-lg">
+      <p className="text-justify text-base md:text-base mb-5 lg:text-lg">
         Nous intervenons également pour des projets spécifiques, tels que :
       </p>
-      <ul className="text-justify text-sm  md:text-base lg:text-lg mb-5 list-disc pl-5">
-        <li className="text-justify text-sm  md:text-base lg:text-lg">
+      <ul className="text-justify text-base  md:text-base lg:text-lg mb-5 list-disc pl-5">
+        <li className="text-justify text-base  md:text-base lg:text-lg">
           La construction de piscines
         </li>
         <li>La réalisation de murs de soutènement</li>
       </ul>{" "}
-      <p className="text-justify text-sm md:text-base mb-5 lg:text-lg">
+      <p className="text-justify text-base md:text-base mb-5 lg:text-lg">
         Avec notre expertise, nous garantissons des ouvrages solides, durables
         et conformes aux normes en vigueur.
       </p>

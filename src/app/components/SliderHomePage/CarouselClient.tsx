@@ -47,11 +47,11 @@ function CarouselClient() {
       className="w-full h-screen z-10
  relative flex flex-col items-center justify-center mb-10"
     >
-      <div className="w-full flex flex-col md:flex-row h-screen">
+      <div className="w-full flex flex-col lg:flex-row h-screen">
         {photos.map((photoArray, arrayIndex) => (
           <div
             key={arrayIndex}
-            className="relative w-full h-1/2 md:h-full md:w-1/2 transition-opacity ease-in-out duration-1000 "
+            className="relative w-full h-1/2 lg:h-full lg:w-1/2 transition-opacity ease-in-out duration-1000 "
           >
             {photoArray.map((photo, photoIndex) => (
               <Image
