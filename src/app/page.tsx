@@ -1,10 +1,44 @@
 import { MdAlternateEmail } from "react-icons/md";
 import { FiPhoneCall } from "react-icons/fi";
+import type { Metadata } from "next";
 
 import Button from "./components/Button";
 import ServiceCarousel from "./components/ServiceCarousel/ServiceCarousel";
 import SliderHomePage from "./components/SliderHomePage/SliderHomePage";
 import contact from "../contact.json";
+
+export const metadata: Metadata = {
+  title:
+    "Arkebat - Entreprise générale du bâtiment au Pays Basque et Sud Landes, spécialisée dans l'éco-construction",
+  description:
+    "Arkebat, expert en maçonnerie écologique au Pays Basque et Sud Landes. Nous réalisons des projets de construction et rénovation avec des matériaux durables.",
+  openGraph: {
+    title:
+      "Arkebat - Entreprise générale du bâtiment au Pays Basque et Sud Landes, spécialisée dans l'éco-construction",
+    description:
+      "Arkebat est spécialisé dans la construction et la rénovation écologique au Pays Basque et Sud Landes. Découvrez nos prestations respectueuses de l'environnement.",
+    url: "https://arkebat.fr",
+    images: [
+      {
+        url: "https://arkebat.fr/Photos/Home/maconnerie.jpg",
+        width: 800,
+        height: 600,
+        alt: "Chantier de construction de maison",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Arkebat - Entreprise générale du bâtiment au Pays Basque et Sud Landes, spécialisée dans l'éco-construction",
+    description:
+      "Expertise en maçonnerie écologique, Arkebat propose des services de construction et rénovation au Pays Basque et Sud Landes.",
+    images: ["https://arkebat.fr/Photos/Home/maconnerie.jpg"],
+  },
+  viewport: "width=device-width, initial-scale=1",
+  robots: "index, follow",
+};
 
 export default function Home() {
   return (

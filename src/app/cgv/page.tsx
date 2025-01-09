@@ -1,4 +1,25 @@
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Conditions Générales de Vente - Arkébat",
+  description:
+    "Consultez les Conditions Générales de Vente d'Arkébat, pour connaître les termes et conditions qui régissent nos services de construction, rénovation, et éco-construction.",
+
+  openGraph: {
+    title: "Conditions Générales de Vente - Arkébat",
+    description:
+      "Découvrez les Conditions Générales de Vente d'Arkébat, qui détaillent les modalités des services que nous proposons en matière de construction, rénovation, et éco-construction.",
+    url: "https://arkebat.fr/cgv", // Replace with the actual URL of the CGV page
+    type: "website",
+  },
+  twitter: {
+    card: "summary", // No image needed for CGV page
+    title: "Conditions Générales de Vente - Arkébat",
+    description:
+      "Consultez les Conditions Générales de Vente d'Arkébat pour en savoir plus sur nos services, les obligations et les droits liés à vos projets de construction.",
+  },
+};
 
 function cgv() {
   return (
