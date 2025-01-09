@@ -33,7 +33,7 @@ const Contact = () => {
         <div className="w-full lg:w-3/5 xl:w-1/2 flex flex-col items-start">
           <p className="text-center lg:text-start lg:pr-10 lg:text-lg">
             Arkébat est à votre disposition pour discuter de votre projet et
-            répondre à toutes vos questions. Contactez-nous aujourd`&apos;`hui
+            répondre à toutes vos questions. Contactez-nous aujourd&apos;hui
             pour obtenir un devis{" "}
             <span className="font-bold text-icon">gratuit</span> et{" "}
             <span className="font-bold text-icon">sans engagement</span>

@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col lg:flex-row-reverse lg:justify-between items-center w-screen lg:w-5/6  lg:py-20 lg:px-10">
+    <footer className="flex flex-col lg:flex-row-reverse lg:justify-between py-10 items-center w-screen lg:w-5/6  lg:py-20 lg:px-10">
       <div className="flex text-title mt-10 lg:my-0 justify-center">
         <FaFacebook size={24} className="mx-3" />
         <FaInstagram size={24} className="mx-3" />
