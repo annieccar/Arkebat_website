@@ -40,7 +40,6 @@ export default function Navbar() {
                   className="p-1"
                 />
               </div>
-
               <div className="flex flex-col items-start my-1">
                 <div className="font-logo text-xl font-semibold translate-y-1">
                   ARKEBAT
