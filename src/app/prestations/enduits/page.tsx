@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   title:
     "Arkebat- Enduits à la Chaux et Monocouches pour Ravalement de Façade, Pays Basque & Sud Landes",
   description:
-    "Découvrez nos solutions d'enduits à la chaux et monocouches pour le ravalement de façade. Arkébat, spécialiste en maçonnerie, vous propose des finitions durables et esthétiques pour vos bâtiments dans le Pays Basque et le Sud des Landes",
+    "Découvrez nos solutions d'enduits à la chaux et monocouches pour le ravalement de façade. Arkebat, spécialiste en maçonnerie, vous propose des finitions durables et esthétiques pour vos bâtiments dans le Pays Basque et le Sud des Landes",
   openGraph: {
     title:
       "Arkebat- Enduits à la Chaux et Monocouches pour Ravalement de Façade, Pays Basque & Sud Landes",
     description:
-      "Découvrez nos solutions d'enduits à la chaux et monocouches pour le ravalement de façade. Arkébat, spécialiste en maçonnerie, vous propose des finitions durables et esthétiques pour vos bâtiments dans le Pays Basque et le Sud des Landes",
+      "Découvrez nos solutions d'enduits à la chaux et monocouches pour le ravalement de façade. Arkebat, spécialiste en maçonnerie, vous propose des finitions durables et esthétiques pour vos bâtiments dans le Pays Basque et le Sud des Landes",
     url: "https://arkebat.fr/prestations/enduits",
     images: [
       {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title:
       "Arkebat- Enduits à la Chaux et Monocouches pour Ravalement de Façade, Pays Basque & Sud Landes",
     description:
-      "Découvrez nos solutions d'enduits à la chaux et monocouches pour le ravalement de façade. Arkébat, spécialiste en maçonnerie, vous propose des finitions durables et esthétiques pour vos bâtiments dans le Pays Basque et le Sud des Landes",
+      "Découvrez nos solutions d'enduits à la chaux et monocouches pour le ravalement de façade. Arkebat, spécialiste en maçonnerie, vous propose des finitions durables et esthétiques pour vos bâtiments dans le Pays Basque et le Sud des Landes",
     images: "https://arkebat.fr/Photos/maconnerie/IMG_3199.jpg",
   },
 };

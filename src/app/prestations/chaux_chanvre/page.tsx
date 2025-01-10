@@ -3,9 +3,9 @@ import { Gallery } from "next-gallery";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Arkébat - Isolation Écologique : Chaux-Chanvre pour Votre Habitat",
+  title: "Arkebat - Isolation Écologique : Chaux-Chanvre pour Votre Habitat",
   description:
-    "Découvrez la technique d'isolation écologique à base de chaux-chanvre d'Arkébat. Une solution naturelle, durable et efficace pour réguler l'humidité et préserver votre confort.",
+    "Découvrez la technique d'isolation écologique à base de chaux-chanvre d'Arkebat. Une solution naturelle, durable et efficace pour réguler l'humidité et préserver votre confort.",
   keywords: [
     "chaux-chanvre",
     "isolation écologique",
@@ -23,23 +23,23 @@ export const metadata: Metadata = {
     "chaux-chanvre rénovation",
   ],
   openGraph: {
-    title: "Arkébat - Isolation Écologique : Chaux-Chanvre pour Votre Habitat",
+    title: "Arkebat - Isolation Écologique : Chaux-Chanvre pour Votre Habitat",
     description:
-      "Spécialistes en isolation écologique, Arkébat propose des solutions en chaux-chanvre pour réguler l'humidité et améliorer la performance thermique de vos bâtiments en Pays Basque et Sud Landes.",
+      "Spécialistes en isolation écologique, Arkebat propose des solutions en chaux-chanvre pour réguler l'humidité et améliorer la performance thermique de vos bâtiments en Pays Basque et Sud Landes.",
     url: "https://arkebat.fr/prestations/chaux_chanvre",
     images: [
       {
         url: "https://arkebat.fr/Photos/chaux_chanvre/IMG_4723.jpg",
-        alt: "Chaux-Chanvre – Arkébat : Application de l'isolant chaux-chanvre",
+        alt: "Chaux-Chanvre – Arkebat : Application de l'isolant chaux-chanvre",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Isolation Écologique au Chaux-Chanvre – Arkébat",
+    title: "Isolation Écologique au Chaux-Chanvre – Arkebat",
     description:
-      "Améliorez la performance énergétique de votre bâtiment avec l'isolation en chaux-chanvre d'Arkébat. Une solution naturelle, durable et efficace pour réguler l'humidité et préserver votre confort.",
+      "Améliorez la performance énergétique de votre bâtiment avec l'isolation en chaux-chanvre d'Arkebat. Une solution naturelle, durable et efficace pour réguler l'humidité et préserver votre confort.",
     images: "https://arkebat.fr/Photos/chaux_chanvre/IMG_4723.jpg",
   },
 };

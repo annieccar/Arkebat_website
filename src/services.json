@@ -1,17 +1,38 @@
 [
-    { "name": "Enduits", "photo": "/Photos/Services/enduits.jpg", "alt": "Une maison en pierre", "href": "/prestations/enduits" },
-    {
-      "name": "Maçonnerie Gros Oeuvre",
-      "photo": "/Photos/Services/maconnerie.jpg",
-      "alt": "Une maison en pierre", "href": "/prestations/maconnerie"
-    },
-    { "name": "Eco Construction", "photo": "/Photos/Services/eco.jpg", "alt": "Une maison en pierre", "href": "/prestations/eco_construction" },
-    { "name": "Charpente", "photo": "/Photos/Services/charpente.jpg", "alt": "Une maison en pierre", "href": "/prestations/charpente" },
-    { "name": "Chaux Chanvre", "photo": "/Photos/Services/chaux-chanvre.jpg", "alt": "Une maison en pierre", "href": "/prestations/chaux_chanvre" },
-    {
-      "name": "Terrassement Assainissement",
-      "photo": "/Photos/Services/assainissement.jpg",
-      "alt": "Une maison en pierre", 
-      "href": "/prestations/terrassement_assainissement"
-    }
-  ]
+  {
+    "name": "Enduits",
+    "photo": "/Photos/Services/enduits.jpg",
+    "alt": "Enduit de façade",
+    "href": "/prestations/enduits"
+  },
+  {
+    "name": "Maçonnerie Gros Oeuvre",
+    "photo": "/Photos/Services/maconnerie.jpg",
+    "alt": "Réalisation de fondations",
+    "href": "/prestations/maconnerie"
+  },
+  {
+    "name": "Eco Construction",
+    "photo": "/Photos/Services/eco.jpg",
+    "alt": "Montage d'un mur en brique de chanvre Biosys",
+    "href": "/prestations/eco_construction"
+  },
+  {
+    "name": "Charpente",
+    "photo": "/Photos/Services/charpente.jpg",
+    "alt": "Charpente bois brûlé",
+    "href": "/prestations/charpente"
+  },
+  {
+    "name": "Chaux Chanvre",
+    "photo": "/Photos/Services/chaux-chanvre.jpg",
+    "alt": "Application d'un isolant chaux-chanvre",
+    "href": "/prestations/chaux_chanvre"
+  },
+  {
+    "name": "Terrassement Assainissement",
+    "photo": "/Photos/Services/assainissement.jpg",
+    "alt": "Pose d'une station d'assainissement autonome",
+    "href": "/prestations/terrassement_assainissement"
+  }
+]

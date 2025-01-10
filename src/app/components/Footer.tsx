@@ -11,7 +11,7 @@ export default function Footer() {
         <FaLinkedin size={24} className="mx-3" />
       </div>
       <div className="flex text-gray md:w-3/4 text-xs md:text-sm lg:text-base lg:justify-start lg:gap-4 justify-around mt-6 mb-4 lg:my-0 text-center w-full">
-        <p className="px-2">© 2024 Arkébat</p>
+        <p className="px-2">© 2024 Arkebat</p>
         <Link href={"/mentions_legales"} className="px-2">
           Mentions légales
         </Link>

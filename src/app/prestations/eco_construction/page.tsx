@@ -4,17 +4,17 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Eco-Construction: Des bâtiments durables avec Arkébat",
+  title: "Eco-Construction: Des bâtiments durables avec Arkebat",
   description:
     "Chez Arkebat, nous construisons des bâtiments respectueux de l'environnement en utilisant des matériaux écologiques comme le béton de chanvre, la terre crue, et le liège. Découvrez notre approche de la construction durable.",
   keywords:
     "eco-construction, béton de chanvre, terre crue, liège, Arkebat, Pays Basque, matériaux écologiques, bâtiments durables, rénovation écologique, construction responsable",
   openGraph: {
-    title: "Eco-Construction: Des bâtiments durables avec Arkébat",
+    title: "Eco-Construction: Des bâtiments durables avec Arkebat",
     description:
-      "Arkébat vous propose des constructions durables avec des matériaux écologiques tels que le béton de chanvre et le liège. Découvrez nos solutions pour un habitat plus respectueux de l'environnement.",
+      "Arkebat vous propose des constructions durables avec des matériaux écologiques tels que le béton de chanvre et le liège. Découvrez nos solutions pour un habitat plus respectueux de l'environnement.",
     url: "https://www.yourwebsite.com/prestations/eco_construction",
-    siteName: "Arkébat",
+    siteName: "Arkebat",
     images: [
       {
         url: "/Photos/eco/IMG_1870.jpg",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Eco-Construction: Des bâtiments durables avec Arkébat",
+    title: "Eco-Construction: Des bâtiments durables avec Arkebat",
     description:
-      "Découvrez l'éco-construction avec Arkébat: des bâtiments durables construits avec des matériaux écologiques.",
+      "Découvrez l'éco-construction avec Arkebat: des bâtiments durables construits avec des matériaux écologiques.",
     images: ["https://www.yourwebsite.com/Photos/eco/IMG_1870.jpg"],
   },
 };
@@ -78,7 +78,7 @@ const Eco = () => {
   return (
     <div className="mt-20 px-10 max-w-[600px] lg:max-w-[800px] xl:max-w-[1024px] 2xl:max-w-[1300px] mx-auto ">
       <h1 className="py-10 text-center text-2xl md:text-3xl">
-        Eco-Construction: Des bâtiments durables avec Arkébat
+        Eco-Construction: Des bâtiments durables avec Arkebat
       </h1>
       <p className="text-justify text-base md:text-base lg:text-lg mb-5">
         Chez Arkebat, nous faisons de la durabilité une priorité. Nous nous

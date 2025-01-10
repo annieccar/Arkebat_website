@@ -5,11 +5,11 @@ import contact from "../../contact.json";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contactez Arkébat - Construction, Rénovation et Éco-Construction",
+  title: "Contactez Arkébat - Maçonnerie, gros-oeuvre et Éco-Construction",
   description:
     "Contactez-nous pour discuter de vos projets de construction, rénovation ou éco-construction. Notre équipe d'experts est là pour mener à bien votre projet dans le Pays Basque et Sud des Landes.",
   openGraph: {
-    title: "Contactez Arkébat - Construction et Rénovation",
+    title: "Contactez Arkébat - Maçonnerie, gros-oeuvre et Éco-Construction",
     description:
       "Vous avez un projet de construction, de rénovation ou d'éco-construction ? Contactez Arkébat pour obtenir un devis ou plus d'informations.",
     url: "https://arkebat.fr/contact",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Contactez Arkébat - Construction et Rénovation",
+    title: "Contactez Arkébat - Maçonnerie, gros-oeuvre et Éco-Construction",
     description:
       "Besoin d'un devis pour vos travaux ? Contactez Arkébat pour discuter de vos projets de construction, rénovation ou éco-construction.",
   },

@@ -1,28 +1,24 @@
- [ 
-    [ 
+[
+  [
     { "src": "/Photos/Home/joint_pierre.jpg", "alt": "Maison en pierre" },
     { "src": "/Photos/Home/Piscine.jpg", "alt": "Piscine maconnée" },
-   
     {
       "src": "/Photos/Home/brique_chanvre.jpg",
       "alt": "Brique de chanvre"
-    }], 
-    [
-      {
-        "src": "/Photos/Home/enduit1.jpg",
-        "alt": "Enduit en chanvre"
-      },
+    }
+  ],
+  [
+    {
+      "src": "/Photos/Home/enduit1.jpg",
+      "alt": "Enduit en chanvre"
+    },
     {
       "src": "/Photos/Home/extension.jpg",
       "alt": "Extension de maison"
     },
     {
       "src": "/Photos/Home/maconnerie.jpg",
-      "alt": "Nouvelle"
-    }]
+      "alt": "Montage de murs maçonnés pour maison individuelle"
+    }
+  ]
 ]
-   
-
-   
-  
-    

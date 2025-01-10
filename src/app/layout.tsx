@@ -15,11 +15,6 @@ const overpass = Overpass({
   variable: "--font-Overpass",
 });
 
-export const metadata: Metadata = {
-  title: "Arkébat",
-  description: "Arkébat, entreprise de maçonnerie du pays basque",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{

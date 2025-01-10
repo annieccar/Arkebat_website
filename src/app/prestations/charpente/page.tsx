@@ -3,9 +3,9 @@ import { Gallery } from "next-gallery";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Arkébat - Charpente Bois : Construction et Aménagement Durable",
+  title: "Arkebat - Charpente Bois : Construction et Aménagement Durable",
   description:
-    "Découvrez les prestations d'Arkébat en charpente bois, offrant des solutions traditionnelles ou industrielles, ainsi que des aménagements extérieurs en bois de qualité.",
+    "Découvrez les prestations d'Arkebat en charpente bois, offrant des solutions traditionnelles ou industrielles, ainsi que des aménagements extérieurs en bois de qualité.",
   keywords: [
     "charpente bois",
     "charpente traditionnelle",
@@ -22,23 +22,23 @@ export const metadata: Metadata = {
     "aménagement bois",
   ],
   openGraph: {
-    title: "Arkébat - Charpente Bois : Construction et Aménagement Durable",
+    title: "Arkebat - Charpente Bois : Construction et Aménagement Durable",
     description:
-      "Spécialistes en charpente bois, Arkébat propose des charpentes traditionnelles et industrielles, ainsi que des aménagements extérieurs en bois robustes et esthétiques.",
+      "Spécialistes en charpente bois, Arkebat propose des charpentes traditionnelles et industrielles, ainsi que des aménagements extérieurs en bois robustes et esthétiques.",
     url: "https://arkebat.fr/prestations/charpente",
     images: [
       {
         url: "https://arkebat.fr/Photos/charpente/IMG_4893.jpg",
-        alt: "Charpente en bois – Arkébat",
+        alt: "Charpente en bois – Arkebat",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Charpente Bois – Arkébat",
+    title: "Charpente Bois – Arkebat",
     description:
-      "Découvrez les charpentes bois d'Arkébat : des solutions en bois massif pour vos projets de construction et aménagement extérieur, alliant robustesse et esthétique.",
+      "Découvrez les charpentes bois d'Arkebat : des solutions en bois massif pour vos projets de construction et aménagement extérieur, alliant robustesse et esthétique.",
     images: "https://arkebat.fr/Photos/charpente/IMG_4893.jpg",
   },
 };

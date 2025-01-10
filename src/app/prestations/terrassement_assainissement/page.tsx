@@ -3,9 +3,9 @@ import { Gallery } from "next-gallery";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Arkébat - Terrassement & Assainissement",
+  title: "Arkebat - Terrassement & Assainissement",
   description:
-    "Arkébat réalise vos travaux de terrassement, de fondations, de démolition, de réseaux, ainsi que l'installation de systèmes d'assainissement autonome et de récupération d'eau pluviale.",
+    "Arkebat réalise vos travaux de terrassement, de fondations, de démolition, de réseaux, ainsi que l'installation de systèmes d'assainissement autonome et de récupération d'eau pluviale.",
   keywords: [
     "assainissement",
     "travaux de terrassement",
@@ -19,23 +19,23 @@ export const metadata: Metadata = {
     "construction durable",
   ],
   openGraph: {
-    title: "Arkébat - Terrassement & Assainissement",
+    title: "Arkebat - Terrassement & Assainissement",
     description:
       "Découvrez nos services de terrassement et d'assainissement pour vos projets de construction : fondations, réseaux, démolition, ainsi que la pose de filières d'assainissement autonome.",
     url: "https://arkebat.fr/prestations/terrassement_assainissement",
     images: [
       {
         url: "https://arkebat.fr/Photos/terrassement/RLHU5043.jpg",
-        alt: "Pose d'une station d'assainissement autonome – Arkébat",
+        alt: "Pose d'une station d'assainissement autonome – Arkebat",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Arkébat - Terrassement & Assainissement",
+    title: "Arkebat - Terrassement & Assainissement",
     description:
-      "Arkébat propose des solutions de terrassement, de fondations et d'assainissement autonome pour vos projets de construction. Contactez-nous pour plus d'informations.",
+      "Arkebat propose des solutions de terrassement, de fondations et d'assainissement autonome pour vos projets de construction. Contactez-nous pour plus d'informations.",
     images: "https://arkebat.fr/Photos/terrassement/RLHU5043.jpg",
   },
 };

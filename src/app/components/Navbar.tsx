@@ -35,7 +35,7 @@ export default function Navbar() {
               <div className="h-20 w-20 relative">
                 <Image
                   src="/logo2.png"
-                  alt="Arkébat logo"
+                  alt="Arkebat logo"
                   fill
                   className="p-1"
                 />
