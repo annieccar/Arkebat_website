@@ -32,17 +32,23 @@ export default function Menu() {
     <div className="h-full">
       <div className="text-title font-title flex h-full items-center">
         <div className="h-full items-center gap-8 pr-2 text-xl hidden md:flex translate-y-1">
-          <Link href="/">Accueil</Link>
+          <Link href="/" className="text-white hover:text-light_green">
+            Accueil
+          </Link>
           <button
-            className="flex text-white items-center gap-1 relative h-full"
+            className="flex text-white hover:text-light_green items-center gap-1 relative h-full"
             onClick={() => setExpertiseOpen(!expertiseOpen)}
           >
             <div>Prestations</div>
-            {!expertiseOpen ? (
-              <FaChevronDown size={15} />
-            ) : (
+            <div
+              className={`${
+                expertiseOpen &&
+                "rotate-180 transition-all ease-in-out duration-300"
+              }`}
+            >
               <FaChevronUp size={15} />
-            )}
+            </div>
+
             {expertiseOpen && (
               <>
                 <div
@@ -51,7 +57,7 @@ export default function Menu() {
                 >
                   {expertises.map((expertise) => (
                     <Link href={expertise.href} key={expertise.name}>
-                      <div className="font-title text-nowrap  text-title text-left hover:bg-title/20  py-3 px-2 text-lg font-normal border-b border-gray/50">
+                      <div className="font-title text-nowrap  text-title hover:text-light_green text-left hover:bg-title/20  py-3 px-2 text-lg font-normal border-b border-gray/50">
                         {expertise.name}
                       </div>
                     </Link>
@@ -60,9 +66,15 @@ export default function Menu() {
               </>
             )}
           </button>
-
-          <Link href="/realisations">Réalisations</Link>
-          <Link href="/contact">Contact</Link>
+          <Link
+            href="/realisations"
+            className="text-white hover:text-light_green"
+          >
+            Réalisations
+          </Link>
+          <Link href="/contact" className="text-white hover:text-light_green">
+            Contact
+          </Link>
         </div>
         <div onClick={() => setMenuOpen(!menuOpen)}>
           <Image src={menu} alt="Mobile menu Icon" className="md:hidden" />

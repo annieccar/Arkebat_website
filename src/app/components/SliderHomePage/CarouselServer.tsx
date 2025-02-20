@@ -32,10 +32,10 @@ function CarouselServer() {
         <div className="absolute inset-0 bg-background bg-opacity-30"></div>
       </div>
       <div className="z-10 absolute flex flex-col gap-3 w-5/6 ">
-        <h1 className="text-center text-5xl lg:text-5xl 2xl:text-6xl font-medium">
+        <h1 className="text-center text-5xl lg:text-5xl 2xl:text-6xl font-title font-medium">
           Entreprise générale du bâtiment
         </h1>
-        <h2 className="text-center text-3xl lg:text-3xl 2xl:text-4xl font-title font-light">
+        <h2 className="text-center text-3xl font-text lg:text-3xl 2xl:text-4xl font-thin">
           Gros Oeuvre et Eco Construction
         </h2>
       </div>

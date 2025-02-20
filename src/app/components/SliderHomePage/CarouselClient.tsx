@@ -90,7 +90,7 @@ function CarouselClient() {
         <h1 className="text-center text-5xl lg:text-5xl 2xl:text-6xl font-medium">
           Entreprise générale du bâtiment
         </h1>
-        <h2 className="text-center text-3xl lg:text-3xl 2xl:text-4xl font-title font-light">
+        <h2 className="text-center text-3xl lg:text-3xl 2xl:text-4xl font-text font-light">
           Gros Oeuvre et Eco Construction
         </h2>
       </div>

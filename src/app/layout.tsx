@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
-import { Inter, Josefin_Sans, Overpass } from "next/font/google";
+import {
+  Inter,
+  Josefin_Sans,
+  Overpass,
+  Montserrat,
+  ABeeZee,
+} from "next/font/google";
 import "./globals.css";
 
 import Navbar from "./components/Navbar";
@@ -13,6 +19,15 @@ const josefin_sans = Josefin_Sans({
 const overpass = Overpass({
   subsets: ["latin"],
   variable: "--font-Overpass",
+});
+const abeezee = ABeeZee({
+  subsets: ["latin"],
+  variable: "--font-Abeezee",
+  weight: "400",
+});
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-Montserrat",
 });
 
 export const metadata: Metadata = {
@@ -28,9 +43,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${josefin_sans.variable} ${overpass.variable}`}
+      className={`${inter.variable} ${josefin_sans.variable} ${overpass.variable} ${abeezee.variable} ${montserrat.variable}`}
     >
-      <body className="min-h-screen flex flex-col items-center bg-background">
+      <body className="min-h-screen flex flex-col items-center">
         <Navbar />
         <main className="grow w-full">{children}</main>
         <Footer />

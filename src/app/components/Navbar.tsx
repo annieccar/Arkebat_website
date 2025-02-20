@@ -5,9 +5,16 @@ import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import Menu from "./Menu";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(0);
+  const pathname = usePathname();
+
+  const isHomePage = pathname === "/";
+  const isBgTransparent = scrolled <= 20 && isHomePage;
+
+  console.log(isHomePage);
 
   const updatePosition = () => {
     setScrolled(window.scrollY);
@@ -20,14 +27,14 @@ export default function Navbar() {
     return () => {
       window.removeEventListener("scroll", updatePosition);
     };
-  }, [scrolled]);
+  }, []);
 
   return (
     <header className="w-full">
       <nav
-        className={`${
-          scrolled >= 20 ? "bg-background" : "bg-none"
-        } hover:bg-background w-full py-2 h-20 text-title flex md:justify-center fixed top-0 z-30 transition-all duration-200 ease-in-out`}
+        className={` hover:bg-almost_black w-full py-2 h-20 text-title flex md:justify-center fixed top-0 z-30 transition-all duration-200 ease-in-out ${
+          isBgTransparent ? "bg-transparent" : "bg-almost_black"
+        }`}
       >
         <div className="flex w-full h-full justify-between items-center md:mx-2 mr-5">
           <Link href="/">

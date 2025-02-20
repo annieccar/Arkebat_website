@@ -61,7 +61,7 @@ export const PrevButton: React.FC<PropType> = (props) => {
 
   return (
     <button
-      className="text-white disabled:text-white/20 hover:text-white/50 text-3xl lg:text-4xl pointer hidden sm:flex"
+      className="text-green disabled:text-green/20 hover:text-light_green text-3xl lg:text-4xl pointer hidden sm:flex"
       type="button"
       {...restProps}
     >
@@ -76,7 +76,7 @@ export const NextButton: React.FC<PropType> = (props) => {
 
   return (
     <button
-      className="text-white disabled:text-white/20 hover:text-white/50   text-3xl lg:text-4xl pointer hidden sm:flex"
+      className="text-green disabled:text-green/20 hover:text-light_green text-3xl lg:text-4xl pointer hidden sm:flex"
       type="button"
       {...restProps}
     >

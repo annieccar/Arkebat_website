@@ -1,4 +1,3 @@
-import { Josefin_Sans } from "next/font/google";
 import type { Config } from "tailwindcss";
 import daisyui from "daisyui";
 
@@ -11,8 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        title: ["var(--font-Josefin)"],
-        text: ["var(--font-Inter)"],
+        title: ["var(--font-Abeezee)"],
+        text: ["var(--font-Montserrat)"],
         logo: ["var(--font-Overpass)"],
       },
       colors: {
@@ -21,6 +20,10 @@ const config: Config = {
         gray: "#D0CCD0",
         icon: "#D0AD6D",
         input: "#2C2E30",
+        light_green: "#CCD5AE",
+        green: "#5A716A",
+        beige: "#E7E0DA",
+        almost_black: "#051014",
       },
       screens: {
         laptop: "1025px",
