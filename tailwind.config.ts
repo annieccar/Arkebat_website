@@ -15,8 +15,8 @@ const config: Config = {
         logo: ["var(--font-Overpass)"],
       },
       colors: {
-        background: "#031926",
-        title: "#FBFCFF",
+        background: "#051014",
+        title: "#051014",
         gray: "#D0CCD0",
         icon: "#D0AD6D",
         input: "#2C2E30",
