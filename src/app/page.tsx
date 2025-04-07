@@ -6,6 +6,9 @@ import Button from "./components/Button";
 import ServiceCarousel from "./components/ServiceCarousel/ServiceCarousel";
 import SliderHomePage from "./components/SliderHomePage/SliderHomePage";
 import contact from "../contact.json";
+import services from "../services.json";
+import ServiceCard from "./components/ServiceCarousel/ServiceCard";
+import ServiceCardV2 from "./components/V2/serviceCardV2";
 
 export const metadata: Metadata = {
   title:
@@ -41,6 +44,8 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  console.log("services:", services);
+
   return (
     <div className=" w-full text-white flex flex-col items-center">
       <div className="w-full flex flex-col items-center">
@@ -83,10 +88,16 @@ export default function Home() {
       </div>
       <div className="w-full flex justify-center bg-beige">
         <section className=" lg:p-10 max-w-[1400px] mx-10 sm:mx-20 w-full flex flex-col items-center">
-          <h2 className="text-center text-3xl lg:text-4xl mb-5 text-almost_black mt-10">
+          <h2 className="text-center text-3xl font-semibold lg:text-4xl mb-5 text-almost_black mt-10">
             Nos prestations
           </h2>
-          <ServiceCarousel />
+          <div className="border-b-4 w-28 border-green mb-8"></div>
+          <div className="grid grid-cols-1 laptop:grid-cols-3 gap-8 w-full">
+            {services.map((service, index) => (
+              <ServiceCardV2 key={index} service={service} />
+            ))}
+          </div>
+          {/* <ServiceCarousel /> */}
         </section>
       </div>
 

@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        title: ["var(--font-Abeezee)"],
+        title: ["var(--font-Montserrat)"],
         text: ["var(--font-Montserrat)"],
         logo: ["var(--font-Overpass)"],
       },
@@ -20,9 +20,9 @@ const config: Config = {
         gray: "#D0CCD0",
         icon: "#D0AD6D",
         input: "#2C2E30",
-        light_green: "#CCD5AE",
+        light_green: "#B6CB9E",
         green: "#5A716A",
-        beige: "#E7E0DA",
+        beige: "#dee4e7",
         almost_black: "#051014",
       },
       screens: {
