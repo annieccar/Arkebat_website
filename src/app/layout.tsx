@@ -10,6 +10,8 @@ import "./globals.css";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { usePathname } from "next/navigation";
+import SliderHomePage from "./components/SliderHomePage/SliderHomePage";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-Inter" });
 const josefin_sans = Josefin_Sans({
@@ -47,7 +49,7 @@ export default function RootLayout({
     >
       <body className="min-h-screen flex flex-col items-center bg-background">
         <Navbar />
-        <main className="grow max-w-[1400px]">{children}</main>
+        <main className="grow">{children}</main>
         <Footer />
       </body>
     </html>

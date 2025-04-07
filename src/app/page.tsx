@@ -47,53 +47,54 @@ export default function Home() {
   console.log("services:", services);
 
   return (
-    <div className="text-white flex flex-col mx-10 md:mx-20 gap-10 lg:gap-20 items-center ">
+    <>
       <SliderHomePage />
-      <section
-        className="lg:p-20 sm:p-10 p-6 text-center bg-green/70
+      <div className="text-white flex flex-col mx-10 md:mx-28 gap-10 lg:gap-20 items-center my-10 lg:my-20 max-w-[1400px] ">
+        <section
+          className="lg:p-20 sm:p-10 p-6 text-center bg-green/70
            text-md lg:text-xl text-white rounded-md"
-      >
-        <p>
-          Arkebat est une entreprise générale de{" "}
-          <span className="font-bold text-light_green">maçonnerie</span> dédiée
-          à l&apos;éco-construction. Nos artisans maçons sont spécialisés dans
-          l&apos;utilisation de matériaux{" "}
-          <span className="font-bold text-light_green">écologiques</span> et de
-          techniques de construction{" "}
-          <span className="font-bold text-light_green">durables</span>.<br></br>{" "}
-          <br></br>Nous proposons une large gamme de service, allant de la
-          construction de maisons individuelles, création d&apos;extension, à la
-          rénovation totale de bâtiments existants.
-        </p>
-        <p>
-          <br></br>
-          Nous prenons en charge les travaux essentiels à la{" "}
-          <span className="font-bold text-light_green">solidité</span> et à la
-          <span className="font-bold text-light_green"> durabilité</span> des
-          structures: Terrassement, fondation, maçonnerie, charpente ainsi que
-          les ravalement de façade et création d&apos;assainissement. Notre
-          démarche, axée sur le{" "}
-          <span className="font-bold text-light_green">conseil </span>
-          et l&apos;accompagnement, vous guide dans l&apos;intégration de
-          solutions durables et responsables.
-        </p>
-      </section>
-      <div className="w-full flex justify-center">
-        <section className="w-full flex flex-col items-center">
-          <h2 className="text-center text-3xl font-semibold lg:text-4xl mb-5 text-white">
-            Nos prestations
-          </h2>
-          <div className="border-b-4 w-28 border-light_green mb-8"></div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 laptop:grid-cols-3 gap-8 w-full">
-            {services.map((service, index) => (
-              <ServiceCardV2 key={index} service={service} />
-            ))}
-          </div>
-          {/* <ServiceCarousel /> */}
+        >
+          <p>
+            Arkebat est une entreprise générale de{" "}
+            <span className="font-bold text-light_green">maçonnerie</span>{" "}
+            dédiée à l&apos;éco-construction. Nos artisans maçons sont
+            spécialisés dans l&apos;utilisation de matériaux{" "}
+            <span className="font-bold text-light_green">écologiques</span> et
+            de techniques de construction{" "}
+            <span className="font-bold text-light_green">durables</span>.
+            <br></br> <br></br>Nous proposons une large gamme de service, allant
+            de la construction de maisons individuelles, création
+            d&apos;extension, à la rénovation totale de bâtiments existants.
+          </p>
+          <p>
+            <br></br>
+            Nous prenons en charge les travaux essentiels à la{" "}
+            <span className="font-bold text-light_green">solidité</span> et à la
+            <span className="font-bold text-light_green"> durabilité</span> des
+            structures: Terrassement, fondation, maçonnerie, charpente ainsi que
+            les ravalement de façade et création d&apos;assainissement. Notre
+            démarche, axée sur le{" "}
+            <span className="font-bold text-light_green">conseil </span>
+            et l&apos;accompagnement, vous guide dans l&apos;intégration de
+            solutions durables et responsables.
+          </p>
         </section>
-      </div>
+        <div className="w-full flex justify-center">
+          <section className="w-full flex flex-col items-center">
+            <h2 className="text-center text-3xl font-semibold lg:text-4xl mb-5 text-white">
+              Nos prestations
+            </h2>
+            <div className="border-b-4 w-28 border-light_green mb-8"></div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 laptop:grid-cols-3 gap-8 w-full">
+              {services.map((service, index) => (
+                <ServiceCardV2 key={index} service={service} />
+              ))}
+            </div>
+            {/* <ServiceCarousel /> */}
+          </section>
+        </div>
 
-      {/* <div className="w-full flex justify-center">
+        {/* <div className="w-full flex justify-center">
         <section className="flex flex-col md:flex-row md:justify-around md:w-full items-center my-10 lg:hidden">
           <div className="w-fit">
             <div className="flex text-white items-center mt-3 md:mt-0">
@@ -132,6 +133,7 @@ export default function Home() {
           <Button title="Nous contacter" isLink={true} />
         </section>
       </div> */}
-    </div>
+      </div>
+    </>
   );
 }
