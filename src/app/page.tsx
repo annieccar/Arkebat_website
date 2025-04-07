@@ -80,10 +80,10 @@ export default function Home() {
       </section>
       <div className="w-full flex justify-center">
         <section className="w-full flex flex-col items-center">
-          <h2 className="text-center text-3xl font-semibold lg:text-4xl mb-5 text-title">
+          <h2 className="text-center text-3xl font-semibold lg:text-4xl mb-5 text-white">
             Nos prestations
           </h2>
-          <div className="border-b-4 w-28 border-green mb-8"></div>
+          <div className="border-b-4 w-28 border-light_green mb-8"></div>
           <div className="grid grid-cols-1 sm:grid-cols-2 laptop:grid-cols-3 gap-8 w-full">
             {services.map((service, index) => (
               <ServiceCardV2 key={index} service={service} />

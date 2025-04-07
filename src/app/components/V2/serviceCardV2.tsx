@@ -13,7 +13,7 @@ type Service = {
 
 function ServiceCardV2({ service }: { service: Service }) {
   return (
-    <div className="w-full h-full hover:scale-105 transition-all duration-300 ease-in-out overflow-hidden group rounded-md hover:shadow-md border border-gray">
+    <div className="w-full h-full hover:scale-[1.03] transition-all duration-300 ease-in-out overflow-hidden group rounded-md hover:shadow-md border border-gray/60">
       <div
         key={service.name}
         className="w-full aspect-[4/3] relative overflow-hidden"

@@ -45,7 +45,7 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${josefin_sans.variable} ${overpass.variable} ${abeezee.variable} ${montserrat.variable}`}
     >
-      <body className="min-h-screen flex flex-col items-center bg-beige">
+      <body className="min-h-screen flex flex-col items-center bg-background">
         <Navbar />
         <main className="grow max-w-[1400px]">{children}</main>
         <Footer />
