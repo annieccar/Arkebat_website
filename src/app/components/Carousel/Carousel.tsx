@@ -25,20 +25,9 @@ const Carousel = ({
   } = usePrevNextButtons(emblaApi);
 
   return (
-    <section
-      className={`embla relative w-full md:w-full ${
-        !isProjectCarousel ? "max-w-[360px]" : ""
-      }  sm:max-w-none lg:max-w-[1024px] xl:max-w-[1400px] flex flex-col`}
-    >
-      <div
-        className="embla__viewport overflow-hidden border-2 border-beige"
-        ref={emblaRef}
-      >
-        <div
-          className={`embla__container flex ${
-            !isProjectCarousel ? "mr-8" : ""
-          }`}
-        >
+    <section className={`embla relative w-full flex flex-col`}>
+      <div className="embla__viewport overflow-hidden " ref={emblaRef}>
+        <div className="embla__container flex gap-8 md:px-4 lg:px-8 ">
           {children}
         </div>
       </div>

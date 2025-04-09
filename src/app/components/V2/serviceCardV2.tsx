@@ -38,7 +38,7 @@ function ServiceCardV2({ service }: { service: Service }) {
   const logoComponent = getLogo(service.logo);
 
   return (
-    <div className="w-full h-full hover:scale-[1.03] transition-all duration-300 ease-in-out overflow-hidden group rounded-md hover:shadow-md border border-gray/50 ">
+    <div className="w-full h-full hover:scale-[1.03] transition-all duration-300 ease-in-out overflow-hidden group rounded-md hover:shadow-md border border-gray/40 ">
       <div
         key={service.name}
         className="w-full aspect-[4/3] relative overflow-hidden"

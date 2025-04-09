@@ -3,12 +3,13 @@ import { FiPhoneCall } from "react-icons/fi";
 import type { Metadata } from "next";
 
 import Button from "./components/Button";
-import ServiceCarousel from "./components/ServiceCarousel/ServiceCarousel";
+import ServiceCarousel from "./components/Carousel/ServiceCarousel";
 import SliderHomePage from "./components/SliderHomePage/SliderHomePage";
 import contact from "../contact.json";
 import services from "../services.json";
-import ServiceCard from "./components/ServiceCarousel/ServiceCard";
 import ServiceCardV2 from "./components/V2/serviceCardV2";
+import projets from "../projets.json";
+import ProjectCarouselV2 from "./components/Carousel/ProjectCarouselV2";
 
 export const metadata: Metadata = {
   title:
@@ -48,7 +49,9 @@ export default function Home() {
 
   return (
     <>
-      <SliderHomePage />
+      <div className="w-full">
+        <SliderHomePage />
+      </div>
       <div className="text-white flex flex-col mx-10 md:mx-28 gap-10 lg:gap-20 items-center my-10 lg:my-20 max-w-[1400px] ">
         <section
           className="lg:p-20 sm:p-10 p-6 text-center bg-green/70
@@ -79,8 +82,8 @@ export default function Home() {
             solutions durables et responsables.
           </p>
         </section>
-        <div className="w-full flex justify-center">
-          <section className="w-full flex flex-col items-center">
+        <section className="w-full flex justify-center">
+          <div className="w-full flex flex-col items-center">
             <h2 className="text-center text-3xl font-semibold lg:text-4xl mb-5 text-white">
               Nos prestations
             </h2>
@@ -90,9 +93,19 @@ export default function Home() {
                 <ServiceCardV2 key={index} service={service} />
               ))}
             </div>
-            {/* <ServiceCarousel /> */}
-          </section>
-        </div>
+          </div>
+        </section>
+
+        <section className="w-full flex justify-center">
+          <div className="w-full flex flex-col items-center">
+            <h2 className="text-center text-3xl font-semibold lg:text-4xl mb-5 text-white">
+              Nos réalisations
+            </h2>
+            <div className="border-b-4 w-28 border-light_green mb-8"></div>
+
+            <ProjectCarouselV2 />
+          </div>
+        </section>
 
         {/* <div className="w-full flex justify-center">
         <section className="flex flex-col md:flex-row md:justify-around md:w-full items-center my-10 lg:hidden">
