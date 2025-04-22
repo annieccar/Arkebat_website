@@ -62,11 +62,6 @@ const Terrassement = () => {
       aspect_ratio: 800 / 600,
       alt: "Travaux de terrassement sur terrain",
     },
-    {
-      src: "/Photos/terrassement/IMG_1839.jpg",
-      aspect_ratio: 6702 / 3906,
-      alt: "Pose d'une station d'assainissement autonome",
-    },
   ];
 
   const widths = [640, 1024, 1280];
