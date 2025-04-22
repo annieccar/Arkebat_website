@@ -7,6 +7,10 @@ import {
   ProjectCardDesktop,
   ProjectCardMobile,
 } from "../components/ProjectCard";
+import {
+  ProjectCardDesktopV2,
+  ProjectCardMobileV2,
+} from "../components/ProjectCardV2";
 
 const Realisations = () => {
   const [visibleIndex, setVisibleIndex] = useState<number>(0);
@@ -45,7 +49,7 @@ const Realisations = () => {
       <div className="w-5/6 max-w-[1024px] xl:max-w-[1200px] grid-cols-2 gap-14 justify-center items-center hidden laptop:grid ">
         {projets?.map((projet, index) => {
           return (
-            <ProjectCardDesktop index={index} projet={projet} key={index} />
+            <ProjectCardDesktopV2 index={index} projet={projet} key={index} />
           );
         })}
       </div>
@@ -64,7 +68,7 @@ const Realisations = () => {
                   : "scale-100 opacity-50"
               }`}
             >
-              <ProjectCardMobile
+              <ProjectCardMobileV2
                 index={index}
                 projet={projet}
                 isVisible={visibleIndex === index}

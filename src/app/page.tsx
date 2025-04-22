@@ -1,14 +1,13 @@
 import { MdAlternateEmail } from "react-icons/md";
 import { FiPhoneCall } from "react-icons/fi";
 import type { Metadata } from "next";
+import Link from "next/link";
+import { HiArrowLongRight } from "react-icons/hi2";
 
-import Button from "./components/Button";
-import ServiceCarousel from "./components/Carousel/ServiceCarousel";
 import SliderHomePage from "./components/SliderHomePage/SliderHomePage";
 import contact from "../contact.json";
 import services from "../services.json";
 import ServiceCardV2 from "./components/V2/serviceCardV2";
-import projets from "../projets.json";
 import ProjectCarouselV2 from "./components/Carousel/ProjectCarouselV2";
 import ContactForm from "./components/ContactForm";
 
@@ -53,10 +52,11 @@ export default function Home() {
       <div className="w-full">
         <SliderHomePage />
       </div>
-      <div className="text-white flex flex-col px-10 md:px-20 container gap-20 lg:gap-32 items-center my-10 lg:my-20 max-w-[1400px] ">
+      <div className="text-white flex flex-col px-10 md:px-20 container gap-20 lg:gap-32 items-center my-20 lg:my-20 max-w-[1400px] ">
         <section
-          className="lg:p-20 sm:p-10 p-6 text-center bg-green/70
-           text-md lg:text-xl text-white rounded-md border-2 border-light_green"
+          className="lg:p-20 sm:p-10 p-6 text-center bg-green/70 backdrop-blur-md
+           text-md lg:text-xl text-white rounded-md border-2 border-light_green scroll-mt-36"
+          id="presentation"
         >
           <p className="text-title">
             Arkebat est une entreprise générale de{" "}
@@ -83,7 +83,7 @@ export default function Home() {
             solutions durables et responsables.
           </p>
         </section>
-        <section className="w-full flex justify-center">
+        <section className="w-full flex justify-center" id="prestations">
           <div className="w-full flex flex-col items-center">
             <h2 className="text-center text-3xl font-semibold lg:text-4xl mb-5 text-white">
               Nos prestations
@@ -97,7 +97,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="w-full flex justify-center">
+        <section className="w-full flex justify-center" id="realisations">
           <div className="w-full flex flex-col items-center">
             <h2 className=" text-3xl font-semibold lg:text-4xl mb-5 text-white">
               Nos réalisations
@@ -105,10 +105,21 @@ export default function Home() {
             <div className="border-b-4 w-28 border-light_green mb-16"></div>
 
             <ProjectCarouselV2 />
+            <div className="w-full justify-end flex mt-5">
+              <Link href="/realisations">
+                <div className=" text-light_green xl:text-lg 2xl:text-xl flex items-center gap-3">
+                  <div>Tout voir</div>
+                  <HiArrowLongRight size={25} className="translate-y-[1px]" />
+                </div>
+              </Link>
+            </div>
           </div>
         </section>
 
-        <section className="w-full flex flex-col items-center">
+        <section
+          className="w-full flex flex-col items-center scroll-mt-36"
+          id="contact"
+        >
           <div className="flex flex-col items-center lg:hidden">
             <h2 className=" text-3xl font-semibold lg:text-4xl mb-5 text-white">
               Nous contacter

@@ -28,6 +28,15 @@ const config: Config = {
       screens: {
         laptop: "1025px",
       },
+      keyframes: {
+        float: {
+          "0%, 100%": { transform: "translate-Y(0)" },
+          "50%": { transform: "translateY(-15px)" },
+        },
+      },
+      animation: {
+        float: "float 2s ease-in-out infinite",
+      },
     },
   },
   plugins: [daisyui],

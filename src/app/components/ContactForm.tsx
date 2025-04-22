@@ -16,7 +16,7 @@ export default function ContactForm() {
 
   return (
     <form
-      className="w-full flex flex-col items-center p-10 mt-10 lg:mt-0 border-light_green border-2 bg-green/50 rounded-md"
+      className="w-full flex flex-col items-center p-6 sm:p-10 mt-10 lg:mt-0 border-light_green border-2 bg-green/50 rounded-md"
       onSubmit={handleSubmit}
     >
       <h2 className="text-light_green w-full text-start mb-4 font-semibold text-lg">

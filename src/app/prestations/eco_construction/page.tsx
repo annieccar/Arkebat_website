@@ -99,7 +99,7 @@ const Eco = () => {
       <h2 className="mb-5 text-xl md:text-2xl">Briques de chanvre Biosys</h2>
       <p className="text-justify text-base md:text-base lg:text-lg mb-5">
         Les blocs de béton de chanvre{" "}
-        <span className="text-icon underline decoration-1">
+        <span className="text-light_green underline decoration-1">
           <Link href="https://www.solution-biosys.fr/" target="_blank">
             Biosys
           </Link>
@@ -133,7 +133,7 @@ const Eco = () => {
         Parpaings en ciment d&apos;argiles Materrup
       </h2>
       <p className="text-justify text-base md:text-base lg:text-lg mb-5">
-        <span className="text-icon underline decoration-1">
+        <span className="text-light_green underline decoration-1">
           <Link href="https://www.materrup.com/" target="_blank">
             Materrup
           </Link>

@@ -72,7 +72,7 @@ export default function Menu() {
           >
             Réalisations
           </Link>
-          <Link href="/contact" className="text-white hover:text-light_green">
+          <Link href="/#contact" className="text-white hover:text-light_green">
             Contact
           </Link>
         </div>
@@ -107,7 +107,7 @@ export default function Menu() {
                 REALISATIONS
               </div>
             </Link>
-            <Link href="/contact">
+            <Link href="/#contact">
               <div className="font-title text-title py-3 pl-3 text-lg font-normal border-b border-gray/50">
                 CONTACT
               </div>

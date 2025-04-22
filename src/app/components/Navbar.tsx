@@ -30,8 +30,10 @@ export default function Navbar() {
   return (
     <header className="w-full">
       <nav
-        className={` hover:bg-almost_black w-full p-2 h-20 text-title flex md:justify-center fixed top-0 z-30 transition-all duration-200 ease-in-out ${
-          isBgTransparent ? "bg-transparent" : "bg-almost_black"
+        className={`hover:bg-almost_black w-full p-2 h-20 text-title flex md:justify-center fixed top-0 z-30 transition-all duration-200 ease-in-out ${
+          isBgTransparent
+            ? "bg-transparent"
+            : "bg-almost_black/20 backdrop-blur-lg"
         }`}
       >
         <div className="flex w-full h-full justify-between items-center md:mx-2 mr-5">

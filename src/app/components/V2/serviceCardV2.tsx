@@ -38,8 +38,11 @@ function ServiceCardV2({ service }: { service: Service }) {
   const logoComponent = getLogo(service.logo);
 
   return (
-    <div className="w-full aspect-[7/8] hover:scale-[1.03] transition-all duration-300 ease-in-out overflow-hidden group rounded-md hover:shadow-md border border-gray/40 ">
-      <div key={service.name} className="w-full h-2/3 relative overflow-hidden">
+    <div className="w-full hover:scale-[1.03] transition-all duration-300 ease-in-out overflow-hidden group rounded-md hover:shadow-md border border-gray/40 ">
+      <div
+        key={service.name}
+        className="w-full h-[250px] xl:h-[300px] relative overflow-hidden"
+      >
         <Image
           src={service.photo}
           alt={service.alt}
@@ -49,12 +52,12 @@ function ServiceCardV2({ service }: { service: Service }) {
         />
         <div className="absolute inset-0 bg-background bg-opacity-30"></div>
       </div>
-      <div className="w-full h-1/3 bg-white relative">
+      <div className="w-full bg-white h-[130px] relative">
         <div className="text-green bg-gray/80 p-4 w-fit rounded-full left-5 -top-6 absolute z-10">
           {logoComponent}
         </div>
-        <div className="p-5 pt-7 flex flex-col gap-2 h-full justify-around">
-          <h1 className="font-text text-lg xl:text-2xl  font-bold text-green transition-all leading-tight duration-300 ease-in-out">
+        <div className="p-5 pt-10 flex flex-col h-full gap-2 justify-between">
+          <h1 className="font-text text-lg xl:text-xl font-bold text-green transition-all leading-tight duration-300 ease-in-out">
             {service.name}
           </h1>
           <Link href={service.href}>
