@@ -1,6 +1,8 @@
 import Image from "next/image";
 
 import photos from "../../../sliderPhotos.json";
+import { BsChevronCompactDown } from "react-icons/bs";
+import Link from "next/link";
 
 function CarouselServer() {
   const serverPhotos = [photos[0][0], photos[1][0]];
@@ -31,14 +33,21 @@ function CarouselServer() {
         ))}
         <div className="absolute inset-0 bg-background bg-opacity-30"></div>
       </div>
-      <div className="z-10 absolute flex flex-col gap-3 w-5/6 ">
+      <div className="z-10 absolute flex flex-col gap-5 w-5/6 ">
         <h1 className="text-center text-5xl lg:text-5xl 2xl:text-6xl font-medium">
           Entreprise générale du bâtiment
         </h1>
-        <h2 className="text-center text-3xl lg:text-3xl 2xl:text-4xl font-title font-light">
+        <h2 className="text-center text-xl  2xl:text-3xl font-title font-light">
           Gros Oeuvre et Eco Construction
         </h2>
       </div>
+      <Link
+        href="/#presentation"
+        className="z-10 absolute text-title bottom-0 text-2xl font-light flex flex-col items-center"
+      >
+        <div>Nous découvrir</div>
+        <BsChevronCompactDown size={70} className="motion-safe:animate-float" />
+      </Link>
     </div>
   );
 }

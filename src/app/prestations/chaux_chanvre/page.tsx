@@ -70,7 +70,7 @@ const ChauxChanvre = () => {
 
   return (
     <div className="mt-20 px-10 max-w-[600px] lg:max-w-[800px] xl:max-w-[1024px] 2xl:max-w-[1300px] mx-auto ">
-      <h1 className="py-10 text-center text-2xl md:text-3xl">Chaux-Chanvre</h1>
+      <h1 className="py-10 text-center text-2xl md:text-3xl">Chaux Chanvre</h1>
       <p className="text-justify text-base md:text-base lg:text-lg mb-5">
         Le chaux-chanvre, qu&apos;il soit projeté ou banché, constitue une
         technique d&apos;isolation à la fois légère et respirante, permettant
