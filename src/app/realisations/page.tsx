@@ -4,10 +4,6 @@ import { useEffect, useRef, useState } from "react";
 import projets from "../../projets.json";
 
 import {
-  ProjectCardDesktop,
-  ProjectCardMobile,
-} from "../components/ProjectCard";
-import {
   ProjectCardDesktopV2,
   ProjectCardMobileV2,
 } from "../components/ProjectCardV2";
@@ -45,7 +41,7 @@ const Realisations = () => {
 
   return (
     <div className=" relative mt-28 w-full flex flex-col items-center z-0 my-10">
-      <h1 className="text-3xl text-almost_black mb-10">Nos réalisations</h1>
+      <h1 className="text-3xl text-title mb-10">Nos réalisations</h1>
       <div className="w-5/6 max-w-[1024px] xl:max-w-[1200px] grid-cols-2 gap-14 justify-center items-center hidden laptop:grid ">
         {projets?.map((projet, index) => {
           return (
