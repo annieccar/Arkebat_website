@@ -42,7 +42,7 @@ const Carousel = ({
               key={index}
               onClick={() => onDotButtonClick(index)}
               className={`w-2 lg:w-2.5 lg:h-2.5 h-2 rounded-full ${
-                index === selectedIndex ? " bg-green" : "bg-green/50"
+                index === selectedIndex ? " bg-light_green" : "bg-green"
               }`}
             />
           ))}

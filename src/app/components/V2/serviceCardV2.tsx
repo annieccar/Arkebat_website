@@ -38,11 +38,8 @@ function ServiceCardV2({ service }: { service: Service }) {
   const logoComponent = getLogo(service.logo);
 
   return (
-    <div className="w-full h-full hover:scale-[1.03] transition-all duration-300 ease-in-out overflow-hidden group rounded-md hover:shadow-md border border-gray/40 ">
-      <div
-        key={service.name}
-        className="w-full aspect-[4/3] relative overflow-hidden"
-      >
+    <div className="w-full aspect-[7/8] hover:scale-[1.03] transition-all duration-300 ease-in-out overflow-hidden group rounded-md hover:shadow-md border border-gray/40 ">
+      <div key={service.name} className="w-full h-2/3 relative overflow-hidden">
         <Image
           src={service.photo}
           alt={service.alt}
@@ -52,19 +49,21 @@ function ServiceCardV2({ service }: { service: Service }) {
         />
         <div className="absolute inset-0 bg-background bg-opacity-30"></div>
       </div>
-      <div className="w-full h-full p-5 bg-white relative">
-        <div className="text-green bg-gray/80 p-4 mb-2 w-fit rounded-full -mt-12 z-10">
+      <div className="w-full h-1/3 bg-white relative">
+        <div className="text-green bg-gray/80 p-4 w-fit rounded-full left-5 -top-6 absolute z-10">
           {logoComponent}
         </div>
-        <h1 className="font-text text-xl font-bold text-green transition-all duration-300 ease-in-out">
-          {service.name}
-        </h1>
-        <Link href={service.href}>
-          <div className=" text-green/70 flex items-center gap-3 font-semibold mt-2">
-            <div>Voir plus</div>
-            <HiArrowLongRight size={20} className="translate-y-[1px]" />
-          </div>
-        </Link>
+        <div className="p-5 pt-7 flex flex-col gap-2 h-full justify-around">
+          <h1 className="font-text text-lg xl:text-2xl  font-bold text-green transition-all leading-tight duration-300 ease-in-out">
+            {service.name}
+          </h1>
+          <Link href={service.href}>
+            <div className=" text-green/70 xl:text-lg 2xl:text-xl  flex items-center gap-3 font-semibold">
+              <div>Voir plus</div>
+              <HiArrowLongRight size={20} className="translate-y-[1px]" />
+            </div>
+          </Link>
+        </div>
       </div>
     </div>
   );

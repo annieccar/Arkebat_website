@@ -10,6 +10,7 @@ import services from "../services.json";
 import ServiceCardV2 from "./components/V2/serviceCardV2";
 import projets from "../projets.json";
 import ProjectCarouselV2 from "./components/Carousel/ProjectCarouselV2";
+import ContactForm from "./components/ContactForm";
 
 export const metadata: Metadata = {
   title:
@@ -52,12 +53,12 @@ export default function Home() {
       <div className="w-full">
         <SliderHomePage />
       </div>
-      <div className="text-white flex flex-col mx-10 md:mx-28 gap-10 lg:gap-20 items-center my-10 lg:my-20 max-w-[1400px] ">
+      <div className="text-white flex flex-col px-10 md:px-20 container gap-20 lg:gap-32 items-center my-10 lg:my-20 max-w-[1400px] ">
         <section
           className="lg:p-20 sm:p-10 p-6 text-center bg-green/70
-           text-md lg:text-xl text-white rounded-md"
+           text-md lg:text-xl text-white rounded-md border-2 border-light_green"
         >
-          <p>
+          <p className="text-title">
             Arkebat est une entreprise générale de{" "}
             <span className="font-bold text-light_green">maçonnerie</span>{" "}
             dédiée à l&apos;éco-construction. Nos artisans maçons sont
@@ -69,7 +70,7 @@ export default function Home() {
             de la construction de maisons individuelles, création
             d&apos;extension, à la rénovation totale de bâtiments existants.
           </p>
-          <p>
+          <p className="text-title">
             <br></br>
             Nous prenons en charge les travaux essentiels à la{" "}
             <span className="font-bold text-light_green">solidité</span> et à la
@@ -87,7 +88,7 @@ export default function Home() {
             <h2 className="text-center text-3xl font-semibold lg:text-4xl mb-5 text-white">
               Nos prestations
             </h2>
-            <div className="border-b-4 w-28 border-light_green mb-8"></div>
+            <div className="border-b-4 w-28 border-light_green mb-16"></div>
             <div className="grid grid-cols-1 sm:grid-cols-2 laptop:grid-cols-3 gap-8 w-full">
               {services.map((service, index) => (
                 <ServiceCardV2 key={index} service={service} />
@@ -98,54 +99,82 @@ export default function Home() {
 
         <section className="w-full flex justify-center">
           <div className="w-full flex flex-col items-center">
-            <h2 className="text-center text-3xl font-semibold lg:text-4xl mb-5 text-white">
+            <h2 className=" text-3xl font-semibold lg:text-4xl mb-5 text-white">
               Nos réalisations
             </h2>
-            <div className="border-b-4 w-28 border-light_green mb-8"></div>
+            <div className="border-b-4 w-28 border-light_green mb-16"></div>
 
             <ProjectCarouselV2 />
           </div>
         </section>
 
-        {/* <div className="w-full flex justify-center">
-        <section className="flex flex-col md:flex-row md:justify-around md:w-full items-center my-10 lg:hidden">
-          <div className="w-fit">
-            <div className="flex text-white items-center mt-3 md:mt-0">
-              <MdAlternateEmail size={24} />
-              <p className="text-sm ml-2">{contact.email}</p>
+        <section className="w-full flex flex-col items-center">
+          <div className="flex flex-col items-center lg:hidden">
+            <h2 className=" text-3xl font-semibold lg:text-4xl mb-5 text-white">
+              Nous contacter
+            </h2>
+            <div className="border-b-4 w-28 border-light_green mb-16"></div>
+          </div>
+          <div className="w-full flex flex-col items-center lg:flex-row lg:gap-10 lg:items-start">
+            <div className="w-full lg:w-1/2 xl:w-3/5 flex flex-col items-start">
+              <div className="lg:flex flex-col hidden">
+                <h2 className=" text-3xl font-semibold lg:text-4xl mb-5 text-white">
+                  Nous contacter
+                </h2>
+                <div className="border-b-4 w-28 border-light_green mb-16"></div>
+              </div>
+              <p className="text-center lg:text-start text-title lg:pr-10 lg:text-lg">
+                Arkébat est à votre disposition pour discuter de votre projet et
+                répondre à toutes vos questions. Contactez-nous aujourd&apos;hui
+                pour obtenir un devis{" "}
+                <span className="font-bold text-light_green">gratuit</span> et{" "}
+                <span className="font-bold text-light_green">
+                  sans engagement
+                </span>
+              </p>
+              <div className="w-full lg:flex flex-col xl:flex-row mt-20 hidden">
+                <div className="flex text-light_green items-center mt-3 md:mt-0">
+                  <MdAlternateEmail size={24} />
+                  <p className="xl:text-lg text-title ml-2">{contact.email}</p>
+                </div>
+                <div className="flex text-light_green items-center mt-3 xl:ml-10">
+                  <FiPhoneCall size={24} />
+                  <div className="xl:text-lg ml-4 text-title flex flex-col">
+                    <p className="text-title">{contact.phone1}</p>
+                    <p className="text-title"> {contact.phone2}</p>
+                  </div>
+                </div>
+              </div>
+              <p className="xl:text-lg mt-6 hidden lg:flex text-title">
+                {contact.opening_hours}
+              </p>
             </div>
-            <div className="flex text-white items-center mt-3">
-              <FiPhoneCall size={24} />
-              <div className="text-sm ml-2 flex">
-                <p>{contact.phone1}</p>
-                <p>&nbsp;/&nbsp;</p>
-                <p>{contact.phone2}</p>
+
+            <div className="w-full lg:w-1/2 xl:w-2/5 flex flex-col items-center ">
+              <ContactForm />
+            </div>
+          </div>
+
+          <div className="flex flex-col items-center mt-4 md:mt-20 lg:hidden">
+            <div className="mt-6 md:mt-0">
+              <div className="flex text-light_green items-center mt-3 md:mt-0">
+                <MdAlternateEmail size={24} />
+                <p className="text-sm ml-2 text-title">{contact.email}</p>
+              </div>
+              <div className="flex text-light_green items-center mt-3">
+                <FiPhoneCall size={24} />
+                <div className="text-sm ml-2 text-title flex">
+                  <p className="text-title">{contact.phone1}</p>
+                  <p className="text-title">&nbsp;/&nbsp;</p>
+                  <p className="text-title"> {contact.phone2}</p>
+                </div>
               </div>
             </div>
-          </div>
-          <p className="text-sm ml-2 mt-3 ">{contact.opening_hours}</p>
-          <Button title="Nous contacter" isLink={true} />
-        </section>
-        <section className="xl:w-5/6 flex flex-col md:flex-row md:justify-around md:w-full items-center mt-24 max-[1023px]:hidden">
-          <div className="flex text-white items-center ">
-            <MdAlternateEmail size={30} className="text-light_green" />
-            <p className="text-lg xl:text-xl ml-2 text-white">
-              {contact.email}
+            <p className="text-sm ml-2 mt-3 text-title">
+              {contact.opening_hours}
             </p>
           </div>
-          <div className="flex items-center">
-            <FiPhoneCall size={30} className="text-light_green" />
-            <div className="text-lg text-white xl:text-xl ml-3 flex flex-col">
-              <p>{contact.phone1}</p>
-              <p> {contact.phone2}</p>
-            </div>
-          </div>
-          <p className="text-lg xl:text-xl ml-2 text-white ">
-            {contact.opening_hours}
-          </p>
-          <Button title="Nous contacter" isLink={true} />
         </section>
-      </div> */}
       </div>
     </>
   );

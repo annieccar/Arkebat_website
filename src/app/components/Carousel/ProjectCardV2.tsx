@@ -51,10 +51,10 @@ export const ProjectCardV2 = (props: ProjectCardDesktopProps) => {
       <div className="absolute bottom-0 w-full h-2/3 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
       <div className="z-10 absolute bottom-0 w-full p-4  justify-between flex flex-col gap-2">
         <div className="flex items-center gap-2">
-          <SlLocationPin size={20} className="text-white/80" />
-          <p className="text-title/90 font-medium">{projet.location}</p>
+          <SlLocationPin size={20} className="text-title" />
+          <p className="text-title text-sm font-medium">{projet.location}</p>
         </div>
-        <h1 className="text-lg text-title font-medium  tracking-tight ">
+        <h1 className="text-title/80 xl:text-lg text-sm tracking-tight ">
           {projet.title}
         </h1>
       </div>

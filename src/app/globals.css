@@ -14,9 +14,9 @@ h3 {
   @apply font-title text-white;
 }
 
-/* p {
+p {
   @apply font-text text-gray font-light;
-} */
+}
 
 li {
   @apply font-text text-gray font-light;
