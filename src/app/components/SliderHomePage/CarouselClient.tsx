@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { BsChevronCompactDown } from "react-icons/bs";
-import { BsChevronCompactDown } from "react-icons/bs";
 
 import photos from "../../../sliderPhotos.json";
 import Link from "next/link";
