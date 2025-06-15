@@ -6,28 +6,10 @@
     "img2": "/Photos/Projets/enduit-apres.jpg"
   },
   {
-    "title": "Réalisation d’une extension en brique monomur",
-    "location": "Bayone",
-    "img1": "/Photos/Projets/extension-avant.jpg",
-    "img2": "/Photos/Projets/extension-apres.jpg"
-  },
-  {
-    "title": "Réalisation d'un extension en briques de chanvre",
-    "location": "Bidart",
-    "img1": "/Photos/Projets/biosys-avant.jpg",
-    "img2": "/Photos/Projets/biosys-apres.jpg"
-  },
-  {
-    "title": "Mis en place d'une isolation par l'extérieur en fibres de bois, étape de la première couche tramée",
-    "location": "Biarritz",
-    "img1": "/Photos/Projets/ite-avant.jpg",
-    "img2": "/Photos/Projets/ite-apres2.jpg"
-  },
-  {
-    "title": "Rénovation totale: Création d'ouvertures, extension de briques de chanvre Biosys et mur de soutènement altus",
-    "location": "Mouguerre",
-    "img1": "/Photos/Projets/mouguerre-avant.jpg",
-    "img2": "/Photos/Projets/mouguerre-apres.jpg"
+    "title": "Studio réalisé en brique de chanvre Biosys et enduit chaux.",
+    "location": "Ciboure",
+    "img1": "/Photos/Projets/studio-avant.jpg",
+    "img2": "/Photos/Projets/studio-apres.jpg"
   },
   {
     "title": "Création d’ouvertures, ravalement de façade et construction d’une piscine",
@@ -37,9 +19,27 @@
     "autresPhotos": ["/Photos/Projets/piscine-avant.jpg"]
   },
   {
-    "title": "Studio réalisé en brique de chanvre Biosys et enduit chaux.",
-    "location": "Ciboure",
-    "img1": "/Photos/Projets/studio-avant.jpg",
-    "img2": "/Photos/Projets/studio-apres.jpg"
+    "title": "Réalisation d'un extension en briques de chanvre",
+    "location": "Bidart",
+    "img1": "/Photos/Projets/biosys-avant.jpg",
+    "img2": "/Photos/Projets/biosys-apres.jpg"
+  },
+  {
+    "title": "Rénovation totale: Création d'ouvertures, extension de briques de chanvre Biosys et mur de soutènement altus",
+    "location": "Mouguerre",
+    "img1": "/Photos/Projets/mouguerre-avant.jpg",
+    "img2": "/Photos/Projets/mouguerre-apres.jpg"
+  },
+  {
+    "title": "Mise en place d'une isolation par l'extérieur en fibres de bois",
+    "location": "Biarritz",
+    "img1": "/Photos/Projets/ite-avant.jpg",
+    "img2": "/Photos/Projets/ITE_APRES.jpeg"
+  },
+  {
+    "title": "Réalisation d’une extension en brique monomur",
+    "location": "Bayone",
+    "img1": "/Photos/Projets/extension-avant.jpg",
+    "img2": "/Photos/Projets/extension-apres.jpg"
   }
 ]

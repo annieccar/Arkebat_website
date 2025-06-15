@@ -46,8 +46,23 @@ export const metadata: Metadata = {
 const Charpente = () => {
   const images = [
     {
-      src: "/Photos/charpente/IMG_4893.jpg",
+      src: "/Photos/charpente/charpente_2.jpeg",
       aspect_ratio: 3024 / 4032,
+      alt: "Charpente en bois",
+    },
+    {
+      src: "/Photos/charpente/Charpente_1.jpeg",
+      aspect_ratio: 6396 / 3054,
+      alt: "Charpente en bois",
+    },
+    {
+      src: "/Photos/charpente/charpente_3.jpeg",
+      aspect_ratio: 3024 / 4032,
+      alt: "Charpente en bois",
+    },
+    {
+      src: "/Photos/charpente/charpente_4.jpeg",
+      aspect_ratio: 4032 / 3024,
       alt: "Charpente en bois",
     },
   ];

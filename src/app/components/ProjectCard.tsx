@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import Carousel from "./ServiceCarousel/Carousel";
+import Carousel from "./Carousel/Carousel";
 
 export type ProjectCardDesktopProps = {
   index: number;

@@ -3,36 +3,42 @@
     "name": "Enduits",
     "photo": "/Photos/Services/enduits.jpg",
     "alt": "Une maison en pierre",
-    "href": "/prestations/enduits"
+    "href": "/prestations/enduits",
+    "logo": "enduit"
   },
   {
     "name": "Maçonnerie Gros Oeuvre",
     "photo": "/Photos/Services/maconnerie.jpg",
     "alt": "Une maison en pierre",
-    "href": "/prestations/maconnerie"
+    "href": "/prestations/maconnerie",
+    "logo": "maconnerie"
   },
   {
     "name": "Eco Construction",
     "photo": "/Photos/Services/eco.jpg",
     "alt": "Une maison en pierre",
-    "href": "/prestations/eco_construction"
+    "href": "/prestations/eco_construction",
+    "logo": "eco"
   },
   {
     "name": "Charpente",
     "photo": "/Photos/Services/charpente.jpg",
     "alt": "Une maison en pierre",
-    "href": "/prestations/charpente"
+    "href": "/prestations/charpente",
+    "logo": "charpente"
   },
   {
     "name": "Chaux Chanvre",
     "photo": "/Photos/Services/chaux-chanvre.jpg",
     "alt": "Une maison en pierre",
-    "href": "/prestations/chaux_chanvre"
+    "href": "/prestations/chaux_chanvre",
+    "logo": "chaux"
   },
   {
     "name": "Terrassement Assainissement",
     "photo": "/Photos/Services/assainissement.jpg",
     "alt": "Une maison en pierre",
-    "href": "/prestations/terrassement_assainissement"
+    "href": "/prestations/terrassement_assainissement",
+    "logo": "terrassement"
   }
 ]

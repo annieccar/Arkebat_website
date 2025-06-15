@@ -61,6 +61,11 @@ const ChauxChanvre = () => {
       aspect_ratio: 4032 / 3024,
       alt: "Mur avec isolant chaux-chanvre",
     },
+    {
+      src: "/Photos/chaux_chanvre/chaux_chanvre.jpg",
+      aspect_ratio: 1200 / 1600,
+      alt: "Application de l'isolant chaux-chanvre",
+    },
   ];
 
   const widths = [640, 1024, 1280];
