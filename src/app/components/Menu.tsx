@@ -29,6 +29,19 @@ export default function Menu() {
     };
   }, [expertiseOpen]);
 
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+
+    // Clean up when component unmounts
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+    };
+  }, [menuOpen]);
+
   return (
     <div className="h-full">
       <div className="text-title font-title flex h-full items-center ml-5 md:ml-10">
@@ -84,7 +97,7 @@ export default function Menu() {
       {menuOpen ? (
         <div className="absolute top-20 left-0 w-full flex flex-col">
           <div
-            className=" bg-background text-text md:hidden z-20"
+            className=" bg-background text-text lg:hidden z-20"
             onClick={() => setMenuOpen(false)}
           >
             <Link href="/">
@@ -115,7 +128,7 @@ export default function Menu() {
             </Link>
           </div>
           <div
-            className="fixed inset-0 top-20 bg-background/70 z-10"
+            className="fixed w-screen h-screen bg-background/70 z-10"
             onClick={() => setMenuOpen(false)}
           ></div>
         </div>
