@@ -2,7 +2,8 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa6";
+import { FaChevronUp } from "react-icons/fa6";
+import { IoMdMenu } from "react-icons/io";
 
 import menu from "../../../public/menu.png";
 import expertises from "../../services.json";
@@ -30,8 +31,8 @@ export default function Menu() {
 
   return (
     <div className="h-full">
-      <div className="text-title font-title flex h-full items-center">
-        <div className="h-full items-center gap-8 pr-2 text-xl hidden md:flex translate-y-1">
+      <div className="text-title font-title flex h-full items-center ml-5 md:ml-10">
+        <div className="h-full items-center gap-8 pr-2 text-xl hidden lg:flex translate-y-1">
           <Link href="/" className="text-white hover:text-light_green">
             Accueil
           </Link>
@@ -76,8 +77,8 @@ export default function Menu() {
             Contact
           </Link>
         </div>
-        <div onClick={() => setMenuOpen(!menuOpen)}>
-          <Image src={menu} alt="Mobile menu Icon" className="md:hidden" />
+        <div onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden">
+          <IoMdMenu size={40} />
         </div>
       </div>
       {menuOpen ? (

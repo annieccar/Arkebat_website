@@ -3,6 +3,7 @@ import { FiPhoneCall } from "react-icons/fi";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { HiArrowLongRight } from "react-icons/hi2";
+import { LuClock4 } from "react-icons/lu";
 
 import SliderHomePage from "./components/SliderHomePage/SliderHomePage";
 import contact from "../contact.json";
@@ -52,10 +53,10 @@ export default function Home() {
       <div className="w-full">
         <SliderHomePage />
       </div>
-      <div className="text-white flex flex-col px-10 md:px-20 container gap-20 lg:gap-32 items-center my-20 lg:my-20 max-w-[1400px] ">
+      <div className="text-white flex flex-col px-8 md:px-20 container gap-20 lg:gap-32 items-center my-20 lg:my-20 max-w-[1400px] ">
         <section
           className="lg:p-20 sm:p-10 p-6 text-center bg-green/70 backdrop-blur-md
-           text-md lg:text-xl text-white rounded-md border-2 border-light_green scroll-mt-36"
+           text-sm md:text-base lg:text-lg xl:text-xl text-white rounded-md border-2 border-light_green scroll-mt-36"
           id="presentation"
         >
           <p className="text-title">
@@ -85,7 +86,7 @@ export default function Home() {
         </section>
         <section className="w-full flex justify-center" id="prestations">
           <div className="w-full flex flex-col items-center">
-            <h2 className="text-center text-3xl font-semibold lg:text-4xl mb-5 text-white">
+            <h2 className="text-center text-2xl md:text-3xl font-semibold lg:text-4xl mb-5 text-white">
               Nos prestations
             </h2>
             <div className="border-b-4 w-28 border-light_green mb-16"></div>
@@ -99,7 +100,7 @@ export default function Home() {
 
         <section className="w-full flex justify-center" id="realisations">
           <div className="w-full flex flex-col items-center">
-            <h2 className=" text-3xl font-semibold lg:text-4xl mb-5 text-white">
+            <h2 className=" text-2xl md:text-3xl font-semibold lg:text-4xl mb-5 text-white">
               Nos réalisations
             </h2>
             <div className="border-b-4 w-28 border-light_green mb-16"></div>
@@ -108,7 +109,7 @@ export default function Home() {
             <div className="w-full justify-end flex mt-5">
               <Link href="/realisations">
                 <div className=" text-light_green xl:text-lg 2xl:text-xl flex items-center gap-3">
-                  <div>Tout voir</div>
+                  <div>Voir tous les projets</div>
                   <HiArrowLongRight size={25} className="translate-y-[1px]" />
                 </div>
               </Link>
@@ -121,7 +122,7 @@ export default function Home() {
           id="contact"
         >
           <div className="flex flex-col items-center lg:hidden">
-            <h2 className=" text-3xl font-semibold lg:text-4xl mb-5 text-white">
+            <h2 className="text-2xl md:text-3xl font-semibold lg:text-4xl mb-5 text-white">
               Nous contacter
             </h2>
             <div className="border-b-4 w-28 border-light_green mb-16"></div>
@@ -156,9 +157,12 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <p className="xl:text-lg mt-6 hidden lg:flex text-title">
-                {contact.opening_hours}
-              </p>
+              <div className="mt-6 hidden lg:flex items-center gap-4 text-light_green">
+                <LuClock4 size={24} />
+                <p className="xl:text-lg  text-title">
+                  {contact.opening_hours}
+                </p>
+              </div>
             </div>
 
             <div className="w-full lg:w-1/2 xl:w-2/5 flex flex-col items-center ">
@@ -166,24 +170,24 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex flex-col items-center mt-4 md:mt-20 lg:hidden">
-            <div className="mt-6 md:mt-0">
-              <div className="flex text-light_green items-center mt-3 md:mt-0">
-                <MdAlternateEmail size={24} />
-                <p className="text-sm ml-2 text-title">{contact.email}</p>
-              </div>
-              <div className="flex text-light_green items-center mt-3">
-                <FiPhoneCall size={24} />
-                <div className="text-sm ml-2 text-title flex">
-                  <p className="text-title">{contact.phone1}</p>
-                  <p className="text-title">&nbsp;/&nbsp;</p>
-                  <p className="text-title"> {contact.phone2}</p>
-                </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-10 md:mt-20 lg:hidden w-full">
+            <div className="flex text-light_green items-center justify-center sm:justify-start md:mt-0">
+              <MdAlternateEmail size={22} />
+              <p className="text-sm ml-2 text-title">{contact.email}</p>
+            </div>
+            <div className="flex text-light_green items-center justify-center sm:justify-start">
+              <FiPhoneCall size={22} />
+              <div className="text-sm ml-2 text-title flex">
+                <p className="text-title">{contact.phone1}</p>
+                <p className="text-title">&nbsp;/&nbsp;</p>
+                <p className="text-title"> {contact.phone2}</p>
               </div>
             </div>
-            <p className="text-sm ml-2 mt-3 text-title">
-              {contact.opening_hours}
-            </p>
+
+            <div className="flex text-light_green items-center gap-2 justify-center sm:justify-start">
+              <LuClock4 size={22} />
+              <p className="text-sm  text-title">{contact.opening_hours}</p>
+            </div>
           </div>
         </section>
       </div>

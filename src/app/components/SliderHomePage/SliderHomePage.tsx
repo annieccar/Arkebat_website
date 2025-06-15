@@ -5,9 +5,6 @@ function SliderHomePage() {
   return (
     <div className="w-full h-screen relative">
       <div className="absolute inset-0">
-        <CarouselServer />
-      </div>
-      <div className="absolute inset-0">
         <CarouselClient />
       </div>
     </div>

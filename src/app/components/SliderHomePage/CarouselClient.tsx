@@ -88,18 +88,18 @@ function CarouselClient() {
         ))}
         <div className="absolute inset-0 bg-background bg-opacity-30"></div>
       </div>
-      <div className="z-10 absolute flex flex-col gap-10 w-5/6 ">
-        <h1 className="text-center text-5xl lg:text-5xl 2xl:text-6xl font-medium">
+      <div className="z-10 absolute flex flex-col gap-6 lg:gap-10 w-5/6 ">
+        <h1 className="text-center text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl font-medium">
           Entreprise générale du bâtiment
         </h1>
-        <h2 className="text-center text-2xl 2xl:text-3xl font-text font-light uppercase">
+        <h2 className="text-center text-lg md:text-xl 2xl:text-3xl font-text  uppercase">
           Gros Oeuvre et Eco Construction
         </h2>
       </div>
 
       <Link
         href="/#presentation"
-        className="z-10 absolute text-title bottom-0 text-2xl font-light flex flex-col items-center"
+        className="z-10 absolute text-title bottom-0 text-xl md:text-2xl font-light flex flex-col items-center"
       >
         <div>Nous découvrir</div>
         <BsChevronCompactDown size={70} className="motion-safe:animate-float" />

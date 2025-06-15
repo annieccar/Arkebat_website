@@ -16,7 +16,7 @@ export default function ContactForm() {
 
   return (
     <form
-      className="w-full flex flex-col items-center p-6 sm:p-10 mt-10 lg:mt-0 border-light_green border-2 bg-green/50 rounded-md"
+      className="w-full flex flex-col items-center p-6 sm:p-10 mt-10 lg:mt-0 border-light_green border bg-green/20 rounded-md"
       onSubmit={handleSubmit}
     >
       <h2 className="text-light_green w-full text-start mb-4 font-semibold text-lg">
@@ -29,7 +29,7 @@ export default function ContactForm() {
             id="last-name"
             type="text"
             name="last-name"
-            className="w-full bg-background rounded-md px-2 py-2 mb-3 mt-2 text-gray text-sm outline-none focus:outline-none "
+            className="w-full bg-green/30 border border-green rounded-md px-2 py-2 mb-3 mt-2 text-white text-sm outline-none focus:outline-none "
             placeholder="Votre nom"
             required
             minLength={2}
@@ -47,7 +47,7 @@ export default function ContactForm() {
             type="text"
             id="first-name"
             name="first-name"
-            className="w-full bg-background rounded-md px-2 py-2 mb-3 mt-2 text-gray text-sm outline-none focus:outline-none "
+            className="w-full bg-green/30 border border-green rounded-md px-2 py-2 mb-3 mt-2 text-white text-sm outline-none focus:outline-none "
             placeholder="Votre prénom"
             required
             minLength={2}
@@ -67,7 +67,7 @@ export default function ContactForm() {
             type="text"
             id="phone"
             name="phone"
-            className="w-full bg-background rounded-md px-2 py-2 mb-3 mt-2 text-gray text-sm outline-none focus:outline-none "
+            className="w-full bg-green/30 border border-green rounded-md px-2 py-2 mb-3 mt-2 text-white text-sm outline-none focus:outline-none "
             placeholder="Téléphone"
             minLength={8}
             maxLength={9}
@@ -85,7 +85,7 @@ export default function ContactForm() {
             type="text"
             name="email"
             id="email"
-            className="w-full bg-background rounded-md px-2 py-2 mb-3 mt-2 text-gray text-sm outline-none focus:outline-none "
+            className="w-full bg-green/30 border border-green rounded-md px-2 py-2 mb-3 mt-2 text-white text-sm outline-none focus:outline-none "
             placeholder="Votre email"
             required
           ></input>
@@ -101,7 +101,7 @@ export default function ContactForm() {
       <textarea
         name="message"
         id="message"
-        className="w-full bg-background rounded-md px-2 py-2 mb-3 mt-2 text-gray text-sm outline-none focus:outline-none min-h-[180px] "
+        className="w-full bg-green/30 border border-green rounded-md px-2 py-2 mb-3 mt-2 text-white text-sm outline-none focus:outline-none min-h-[180px] "
         placeholder="Votre message"
         required
         minLength={20}
@@ -119,88 +119,3 @@ export default function ContactForm() {
     </form>
   );
 }
-
-// "use client";
-
-// import React from "react";
-// import { useForm, ValidationError } from "@formspree/react";
-// import Button from "../components/Button";
-
-// function ContactForm() {
-//   const [state, handleSubmit] = useForm("xdkoolov");
-
-//   if (state.succeeded) {
-//     return <p>Thanks for joining!</p>;
-//   }
-
-//   return (
-//     <form
-//       className="mt-10 w-5/6 lg:w-full xl:w-2/3 lg:ml-10 lg:mt-0 md:w-2/3 flex flex-col items-center"
-//       onSubmit={handleSubmit}
-//     >
-//       <input
-//         id="last-name"
-//         type="text"
-//         name="last-name"
-//         className="w-full bg-input rounded-md text-md px-2 py-1 my-3 text-gray outline-none focus:outline-none "
-//         placeholder="Nom"
-//         required
-//         minLength={2}
-//       ></input>
-//       <ValidationError
-//         prefix="Last name"
-//         field="last-name"
-//         errors={state.errors}
-//       />
-//       <input
-//         type="text"
-//         id="first-name"
-//         name="first-name"
-//         className="w-full bg-input rounded-md text-md px-2 py-1 my-3 text-gray outline-none focus:outline-none "
-//         placeholder="Prénom"
-//         required
-//         minLength={2}
-//       ></input>
-//       <ValidationError
-//         prefix="First name"
-//         field="first-name"
-//         errors={state.errors}
-//       />
-//       <input
-//         type="text"
-//         id="phone"
-//         name="phone"
-//         className="w-full bg-input rounded-md text-md px-2 py-1 my-3 text-gray outline-none focus:outline-none "
-//         placeholder="Téléphone"
-//       ></input>
-//       <ValidationError prefix="Téléphone" field="phone" errors={state.errors} />
-//       <input
-//         type="text"
-//         name="email"
-//         id="email"
-//         className="w-full bg-input rounded-md text-md px-2 py-1 my-3 text-gray outline-none focus:outline-none "
-//         placeholder="Email"
-//         required
-//       ></input>
-//       <ValidationError prefix="Email" field="email" errors={state.errors} />
-//       <textarea
-//         name="message"
-//         id="message"
-//         className="w-full bg-input rounded-md text-md px-2 py-1 my-3 text-gray outline-none focus:outline-none min-h-[180px] "
-//         placeholder="Votre message"
-//         required
-//         minLength={20}
-//       ></textarea>
-//       <ValidationError
-//         prefix="Messagee"
-//         field="message"
-//         errors={state.errors}
-//       />
-//       <button type="submit" disabled={state.submitting} className="md:mt-10">
-//         <Button title="Envoyer" />
-//       </button>
-//     </form>
-//   );
-// }
-
-// export default ContactForm;

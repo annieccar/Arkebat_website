@@ -36,10 +36,10 @@ export default function Navbar() {
             : "bg-almost_black/20 backdrop-blur-lg"
         }`}
       >
-        <div className="flex w-full h-full justify-between items-center md:mx-2 mr-5">
+        <div className="flex w-full h-full justify-between items-center md:mx-2">
           <Link href="/">
             <div className="flex items-center gap-4 h-full w-full">
-              <div className="h-16">
+              <div className="h-12 md:h-16">
                 <Image
                   src="/ARKEBAT-blanc.png"
                   alt="Arkébat logo"
