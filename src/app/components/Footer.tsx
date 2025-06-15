@@ -5,8 +5,8 @@ import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 export default function Footer() {
   return (
     <div className="w-full justify-center flex bg-almost_black">
-      <footer className="flex flex-col lg:flex-row-reverse lg:justify-between py-10 items-center w-screen lg:w-5/6  lg:py-20 lg:px-10">
-        <div className="flex text-white mt-10 lg:my-0 justify-center">
+      <footer className="flex flex-col lg:flex-row-reverse lg:justify-between pb-10 pt-5 lg:pt-10 items-center w-screen lg:w-5/6  lg:py-20 lg:px-10">
+        <div className="flex text-white justify-center">
           {/* <FaFacebook size={24} className="mx-3" /> */}
           <a
             target="_blank"
