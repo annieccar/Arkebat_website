@@ -45,6 +45,11 @@ export const metadata: Metadata = {
   robots: "index, follow",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 export default function Home() {
   console.log("services:", services);
 
