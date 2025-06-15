@@ -3,6 +3,8 @@ import Image from "next/image";
 import photos from "../../../sliderPhotos.json";
 import { BsChevronCompactDown } from "react-icons/bs";
 import Link from "next/link";
+import { BsChevronCompactDown } from "react-icons/bs";
+import Link from "next/link";
 
 function CarouselServer() {
   const serverPhotos = [photos[0][0], photos[1][0]];

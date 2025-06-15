@@ -6,6 +6,7 @@ import React, { useState, useEffect } from "react";
 import Menu from "./Menu";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(0);
