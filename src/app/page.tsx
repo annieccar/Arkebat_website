@@ -58,7 +58,7 @@ export default function Home() {
       <div className="w-full">
         <SliderHomePage />
       </div>
-      <div className="text-white flex flex-col px-8 md:px-20 container gap-20 lg:gap-32 items-center mt-20 mb-10 lg:my-20 max-w-[1400px] ">
+      <div className="text-white flex flex-col px-8 md:px-20 container gap-20 lg:gap-32 items-center mt-20  max-w-[1400px] ">
         <section
           className="lg:p-20 sm:p-10 p-6 text-center bg-green/70 backdrop-blur-md
            text-sm md:text-base lg:text-lg xl:text-xl text-white rounded-md border-2 border-light_green scroll-mt-36"
