@@ -33,6 +33,9 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "Arkébat",
   description: "Arkébat, entreprise de maçonnerie du pays basque",
+  icons: {
+    icon: [{ url: "/favicon.ico", type: "image/x-icon" }],
+  },
 };
 
 export default function RootLayout({
