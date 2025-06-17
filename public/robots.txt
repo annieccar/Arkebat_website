@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: http://arkebat.fr
+
+# Sitemaps
+Sitemap: http://arkebat.fr/sitemap.xml
