@@ -41,6 +41,9 @@ export const metadata: Metadata = {
       "Découvrez les charpentes bois d'Arkébat : des solutions en bois massif pour vos projets de construction et aménagement extérieur, alliant robustesse et esthétique.",
     images: "https://arkebat.fr/Photos/charpente/IMG_4893.jpg",
   },
+  alternates: {
+    canonical: "https://www.arkebat.fr/charpente",
+  },
 };
 
 const Charpente = () => {

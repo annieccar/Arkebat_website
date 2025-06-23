@@ -42,6 +42,9 @@ export const metadata: Metadata = {
       "Améliorez la performance énergétique de votre bâtiment avec l'isolation en chaux-chanvre d'Arkébat. Une solution naturelle, durable et efficace pour réguler l'humidité et préserver votre confort.",
     images: "https://arkebat.fr/Photos/chaux_chanvre/IMG_4723.jpg",
   },
+  alternates: {
+    canonical: "https://www.arkebat.fr/chaux_chanvre",
+  },
 };
 
 const ChauxChanvre = () => {

@@ -29,6 +29,9 @@ export const metadata: Metadata = {
       "Découvrez nos solutions d'enduits à la chaux et monocouches pour le ravalement de façade. Arkébat, spécialiste en maçonnerie, vous propose des finitions durables et esthétiques pour vos bâtiments dans le Pays Basque et le Sud des Landes",
     images: "https://arkebat.fr/Photos/maconnerie/IMG_3199.jpg",
   },
+  alternates: {
+    canonical: "https://www.arkebat.fr/enduits",
+  },
 };
 const Enduits = () => {
   const images = [

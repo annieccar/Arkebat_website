@@ -38,6 +38,9 @@ export const metadata: Metadata = {
       "Arkébat propose des solutions de terrassement, de fondations et d'assainissement autonome pour vos projets de construction. Contactez-nous pour plus d'informations.",
     images: "https://arkebat.fr/Photos/terrassement/RLHU5043.jpg",
   },
+  alternates: {
+    canonical: "https://www.arkebat.fr/terrassement_assainissement",
+  },
 };
 
 const Terrassement = () => {
