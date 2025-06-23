@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Carousel from "./Carousel/Carousel";
+import { SlLocationPin } from "react-icons/sl";
 
 export type ProjectCardDesktopProps = {
   index: number;
@@ -16,13 +17,13 @@ export type ProjectCardDesktopProps = {
   isVisible?: boolean;
 };
 
-export const ProjectCardDesktop = (props: ProjectCardDesktopProps) => {
+export const ProjectCardDesktopV2 = (props: ProjectCardDesktopProps) => {
   const { index, projet } = props;
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   return (
     <div
       key={index}
-      className="w-full aspect-[4/3] relative "
+      className="w-full aspect-[4/3] relative rounded-md overflow-hidden "
       onMouseEnter={() => setHoveredIndex(index)}
       onMouseLeave={() => setHoveredIndex(null)}
     >
@@ -48,35 +49,43 @@ export const ProjectCardDesktop = (props: ProjectCardDesktopProps) => {
         fill
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
       />
-      <div className="absolute inset-0 bg-background bg-opacity-25"></div>
-      <div className="z-10 absolute bottom-0 left-0 p-4">
-        <h1 className=" text-lg font-normal">{projet.title}</h1>
-        <p className="text-title text-sm">{projet.location}</p>
+      <div className="absolute bottom-0 h-1/2 w-full bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+      <div className="z-10 absolute bottom-0 w-full p-4  justify-between flex flex-col gap-2">
+        <div className="flex items-center gap-2">
+          <SlLocationPin size={20} className="text-title" />
+          <p className="text-title text-sm font-medium">{projet.location}</p>
+        </div>
+        <h1 className="text-title/80 xl:text-lg text-sm tracking-tight ">
+          {projet.title}
+        </h1>
       </div>
-      <div className="absolute inset-2 solid border-[1px] border-title border-opacity-60" />
     </div>
   );
 };
 
-export const ProjectCardMobile = (props: ProjectCardDesktopProps) => {
+export const ProjectCardMobileV2 = (props: ProjectCardDesktopProps) => {
   const { projet } = props;
 
   const photos = [projet.img1, projet.img2, ...(projet.autresPhotos || [])];
 
   return (
-    <>
+    <div>
       <div className="z-10 absolute bottom-[40px] left-0 p-4 flex flex-col items-start">
-        <h1 className=" text-lg font-normal text-left">{projet.title}</h1>
-        <p className="text-title text-sm">{projet.location}</p>
+        <div className="flex items-center gap-2 mb-2">
+          <SlLocationPin size={20} className="text-title" />
+          <p className="text-title text-sm font-medium">{projet.location}</p>
+        </div>
+        <h1 className="text-title/80 xl:text-lg text-sm tracking-tight ">
+          {projet.title}
+        </h1>
       </div>
-      <div className="absolute inset-2 bottom-[48px] solid border-[1px] border-title border-opacity-80" />
       <Carousel isProjectCarousel={true}>
         {photos.map((photo, index) => (
           <div
-            className="flex-none flex items-center justify-center basis-full overflow-hidden"
+            className="flex-none flex items-center justify-center basis-full overflow-hidden rounded-md"
             key={index}
           >
-            <div className="w-full aspect-square  relative cursor-pointer">
+            <div className="w-full aspect-square relative cursor-pointer">
               <Image
                 src={photo}
                 style={{
@@ -88,10 +97,11 @@ export const ProjectCardMobile = (props: ProjectCardDesktopProps) => {
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
+              <div className="absolute bottom-0 z-8 h-1/2 w-full bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
             </div>
           </div>
         ))}
       </Carousel>
-    </>
+    </div>
   );
 };

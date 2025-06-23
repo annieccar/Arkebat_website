@@ -2,7 +2,8 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa6";
+import { FaChevronUp } from "react-icons/fa6";
+import { IoMdMenu } from "react-icons/io";
 
 import menu from "../../../public/menu.png";
 import expertises from "../../services.json";
@@ -28,21 +29,40 @@ export default function Menu() {
     };
   }, [expertiseOpen]);
 
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+
+    // Clean up when component unmounts
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+    };
+  }, [menuOpen]);
+
   return (
     <div className="h-full">
-      <div className="text-title font-title flex h-full items-center">
-        <div className="h-full items-center gap-8 pr-2 text-xl hidden md:flex translate-y-1">
-          <Link href="/">Accueil</Link>
+      <div className="text-title font-title flex h-full items-center ml-5 md:ml-10">
+        <div className="h-full items-center gap-8 pr-2 text-xl hidden lg:flex translate-y-1">
+          <Link href="/" className="text-white hover:text-light_green">
+            Accueil
+          </Link>
           <button
-            className="flex text-white items-center gap-1 relative h-full"
+            className="flex text-white hover:text-light_green items-center gap-1 relative h-full"
             onClick={() => setExpertiseOpen(!expertiseOpen)}
           >
             <div>Prestations</div>
-            {!expertiseOpen ? (
-              <FaChevronDown size={15} />
-            ) : (
+            <div
+              className={`${
+                expertiseOpen &&
+                "rotate-180 transition-all ease-in-out duration-300"
+              }`}
+            >
               <FaChevronUp size={15} />
-            )}
+            </div>
+
             {expertiseOpen && (
               <>
                 <div
@@ -51,7 +71,7 @@ export default function Menu() {
                 >
                   {expertises.map((expertise) => (
                     <Link href={expertise.href} key={expertise.name}>
-                      <div className="font-title text-nowrap  text-title text-left hover:bg-title/20  py-3 px-2 text-lg font-normal border-b border-gray/50">
+                      <div className="font-title text-nowrap  text-title hover:text-light_green text-left hover:bg-title/20  py-3 px-2 text-lg font-normal border-b border-gray/50">
                         {expertise.name}
                       </div>
                     </Link>
@@ -60,18 +80,24 @@ export default function Menu() {
               </>
             )}
           </button>
-
-          <Link href="/realisations">Réalisations</Link>
-          <Link href="/contact">Contact</Link>
+          <Link
+            href="/realisations"
+            className="text-white hover:text-light_green"
+          >
+            Réalisations
+          </Link>
+          <Link href="/#contact" className="text-white hover:text-light_green">
+            Contact
+          </Link>
         </div>
-        <div onClick={() => setMenuOpen(!menuOpen)}>
-          <Image src={menu} alt="Mobile menu Icon" className="md:hidden" />
+        <div onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden">
+          <IoMdMenu size={40} />
         </div>
       </div>
       {menuOpen ? (
         <div className="absolute top-20 left-0 w-full flex flex-col">
           <div
-            className=" bg-background text-text md:hidden z-20"
+            className=" bg-background text-text lg:hidden z-20"
             onClick={() => setMenuOpen(false)}
           >
             <Link href="/">
@@ -95,14 +121,14 @@ export default function Menu() {
                 REALISATIONS
               </div>
             </Link>
-            <Link href="/contact">
+            <Link href="/#contact">
               <div className="font-title text-title py-3 pl-3 text-lg font-normal border-b border-gray/50">
                 CONTACT
               </div>
             </Link>
           </div>
           <div
-            className="fixed inset-0 top-20 bg-background/70 z-10"
+            className="fixed w-screen h-screen bg-background/70 z-10"
             onClick={() => setMenuOpen(false)}
           ></div>
         </div>
