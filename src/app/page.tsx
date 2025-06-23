@@ -43,6 +43,9 @@ export const metadata: Metadata = {
   },
   viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
+  alternates: {
+    canonical: "https://www.arkebat.fr/",
+  },
 };
 
 export const viewport = {

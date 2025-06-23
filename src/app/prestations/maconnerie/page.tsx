@@ -42,6 +42,9 @@ export const metadata: Metadata = {
       "Découvrez les services de maçonnerie d'Arkébat : extension, fondations, murs porteurs, et plus, dans une démarche de construction durable.",
     images: "https://arkebat.fr/Photos/maconnerie/IMG_3199.jpg",
   },
+  alternates: {
+    canonical: "https://www.arkebat.fr/maconnerie",
+  },
 };
 
 const Maçonnerie = () => {

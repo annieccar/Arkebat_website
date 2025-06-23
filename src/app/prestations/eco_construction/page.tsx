@@ -31,6 +31,9 @@ export const metadata: Metadata = {
       "Découvrez l'éco-construction avec Arkébat: des bâtiments durables construits avec des matériaux écologiques.",
     images: ["https://www.yourwebsite.com/Photos/eco/IMG_1870.jpg"],
   },
+  alternates: {
+    canonical: "https://www.arkebat.fr/eco_construction",
+  },
 };
 
 const Eco = () => {
