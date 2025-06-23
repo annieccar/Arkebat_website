@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: http://arkebat.fr
+Host: https://www.arkebat.fr
 
 # Sitemaps
-Sitemap: http://arkebat.fr/sitemap.xml
+Sitemap: https://www.arkebat.fr/sitemap.xml
